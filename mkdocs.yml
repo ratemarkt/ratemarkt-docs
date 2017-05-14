@@ -1,4 +1,8 @@
 site_name: Ratemarkt Docs
 site_url: http://docs.ratemarkt.com
 theme: null
-theme_dir: 'material'
+theme_dir: 'mkdocs-material/material'
+extra_css:
+  - 'css/extra.css'
+extra_javascript:
+  - 'js/extra.js'
