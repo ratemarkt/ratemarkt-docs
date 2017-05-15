@@ -75,8 +75,10 @@ pages:
     - 'Check Booking Endpoint': 'api_docs/check_booking.md'
     - 'Cancel Booking Endpoint': 'api_docs/cancel_booking.md'
     - 'Errors': 'api_docs/errors.md'
+    - 'Client Libraries': 'api_docs/client_libraries.md'
 - 'SDK Docs':
     - 'Getting Started': 'sdk_docs/getting_started.md'
 - 'Supply Specs':
     - 'Getting Started': 'api_specs/getting_started.md'
+- 'Open Source': 'open_source.md'
 - 'F.A.Q': faq.md
