@@ -14,6 +14,8 @@ extra_css:
   - 'css/extra.css'
 
 extra_javascript:
+  - 'https://code.jquery.com/jquery-3.2.1.slim.min.js'
+  - 'https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.js'
   - 'js/extra.js'
 
 extra:
@@ -25,12 +27,14 @@ extra:
     code: 'Ubuntu Mono'
   logo: 'img/logo.png'
   social:
-    - type: 'github'
+    - type: 'globe'
+      link: 'http://ratemarkt.com'
+    - type: 'github-alt'
       link: 'https://github.com/ratemarkt'
     - type: 'twitter'
       link: 'https://twitter.com/ratemarkt'
     - type: 'linkedin'
-      link: 'https://de.linkedin.com/in/ratemarkt'
+      link: 'https://www.linkedin.com/company/ratemarkt'
   feature:
     # tabs: true
 
