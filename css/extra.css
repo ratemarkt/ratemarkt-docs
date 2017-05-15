@@ -1,0 +1,18 @@
+.md-logo img {
+    width: 172px;
+    height: 16px;
+    margin-top: 4px;
+    margin-right: 0px;
+}
+
+.md-header-nav__title, .md-header-nav__parent {
+    font-size: 16px;
+}
+
+.md-footer-nav {
+    display: none;
+}
+
+.md-footer-meta {
+    background-color: #ef5350;
+}
