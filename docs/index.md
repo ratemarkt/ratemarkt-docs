@@ -1,6 +1,7 @@
-# Welcome to MkDocs
+# Welcome to Ratemarkt Docs
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+Here you can find plenty of documents about Ratemarkt.
+For Ratemarkt introduction please visit [ratemarkt.org](http://ratemarkt.com) first.
 
 ## Commands
 
