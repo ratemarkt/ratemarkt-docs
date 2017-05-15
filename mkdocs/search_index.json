@@ -27,17 +27,22 @@
         }, 
         {
             "location": "/api_docs/getting_started/", 
-            "text": "Getting Started\n\n\nWelcome to Ratemarkt Client API.\n\n\nRatemarkt Client API is very intuitive, predictable and simple HTTP based REST-like Json API to make it very easy to get intgerated to Ratemarkt as a client. It just requires single API Key in http request headers and introduces only six end points in total to get all job done with ease.\n\n\nLocation\n\n\nRatemarkt API is currently located at \napi.ratemarkt.com\n domain under \nv1\n directory which  denotes the current API version.\nAll API calls require a secure http connection (\nHTTPS\n over \nSSL\n) and must be authenticated using an API Key to get work.\n\n\n1\nhttps://api.ratemarkt.com/v1/\n\n\n\n\n\n\nFor instance, you should call the url below for check hotels endpoint.\n\n\n1\nhttps://api.ratemarkt.com/v1/checkhotels\n\n\n\n\n\n\nAuthentication\n\n\nIn order to get autheticated agains Ratemarkt API please see \nAuthentication\n page. Once you get authenticated you will be able to access the resources below.\n\n\nResources\n\n\n\n\nCheck Hotels\n Get availabile hotels by a destination or multiple hotel id information.\n\n\nCheck Hotel\n Single hotel availability with more recent data.\n\n\nCheck Rate\n Single rate availability with the most recent information by a rate key.\n\n\nBook Rate\n Make a booking from the selected rate by using rate key.\n\n\nCheck Booking\n Query the booking status using either booking reference or client reference.\n\n\nCancel Booking\n Cancel refered booking when desired.", 
+            "text": "Getting Started\n\n\nWelcome to Ratemarkt Client API.\n\n\nIntroduction\n\n\nRatemarkt Client API is quite intuitive, predictable and very easy http based json API to make it very easy to get intgerated with Ratemarkt as a client.\n\n\nIt just requires a single API key in http headers to get authenticated and introduces only six end points in total to get all job done with ease.\n\n\nLocation\n\n\nRatemarkt API is currently located at \napi.ratemarkt.com\n domain under \nv1\n directory which also denotes the current API version.\nAll calls require a secure http connection (\nHTTPS\n, \nSSL\n) and must be authenticated using an API key to get work.\n\n\nHere is the base url for all API calls.\n\n\n1\nhttps://api.ratemarkt.com/v1/\n\n\n\n\n\n\nFor instance, you should call the url below for check hotels endpoint.\n\n\n1\nhttps://api.ratemarkt.com/v1/checkhotels\n\n\n\n\n\n\nAuthentication\n\n\nIn order to get autheticated agains Ratemarkt API please see \nAuthentication\n page. Once you get authenticated you will be able to access the resources below.\n\n\nResources\n\n\n\n\nCheck Hotels\n Get availabile hotels by a destination or multiple hotel id information.\n\n\nCheck Hotel\n Single hotel availability with more recent data.\n\n\nCheck Rate\n Single rate availability with the most recent information by a rate key.\n\n\nBook Rate\n Make a booking from the selected rate by using rate key.\n\n\nCheck Booking\n Query the booking status using either booking reference or client reference.\n\n\nCancel Booking\n Cancel refered booking when desired.\n\n\n\n\nErrors\n\n\nTo see how Ratemarkt API handles exceptional situations and errors please refer to our \nErrors\n pages.", 
             "title": "Getting Started"
         }, 
         {
             "location": "/api_docs/getting_started/#getting-started", 
-            "text": "Welcome to Ratemarkt Client API.  Ratemarkt Client API is very intuitive, predictable and simple HTTP based REST-like Json API to make it very easy to get intgerated to Ratemarkt as a client. It just requires single API Key in http request headers and introduces only six end points in total to get all job done with ease.", 
+            "text": "Welcome to Ratemarkt Client API.", 
             "title": "Getting Started"
         }, 
         {
+            "location": "/api_docs/getting_started/#introduction", 
+            "text": "Ratemarkt Client API is quite intuitive, predictable and very easy http based json API to make it very easy to get intgerated with Ratemarkt as a client.  It just requires a single API key in http headers to get authenticated and introduces only six end points in total to get all job done with ease.", 
+            "title": "Introduction"
+        }, 
+        {
             "location": "/api_docs/getting_started/#location", 
-            "text": "Ratemarkt API is currently located at  api.ratemarkt.com  domain under  v1  directory which  denotes the current API version.\nAll API calls require a secure http connection ( HTTPS  over  SSL ) and must be authenticated using an API Key to get work.  1 https://api.ratemarkt.com/v1/   For instance, you should call the url below for check hotels endpoint.  1 https://api.ratemarkt.com/v1/checkhotels", 
+            "text": "Ratemarkt API is currently located at  api.ratemarkt.com  domain under  v1  directory which also denotes the current API version.\nAll calls require a secure http connection ( HTTPS ,  SSL ) and must be authenticated using an API key to get work.  Here is the base url for all API calls.  1 https://api.ratemarkt.com/v1/   For instance, you should call the url below for check hotels endpoint.  1 https://api.ratemarkt.com/v1/checkhotels", 
             "title": "Location"
         }, 
         {
@@ -49,6 +54,11 @@
             "location": "/api_docs/getting_started/#resources", 
             "text": "Check Hotels  Get availabile hotels by a destination or multiple hotel id information.  Check Hotel  Single hotel availability with more recent data.  Check Rate  Single rate availability with the most recent information by a rate key.  Book Rate  Make a booking from the selected rate by using rate key.  Check Booking  Query the booking status using either booking reference or client reference.  Cancel Booking  Cancel refered booking when desired.", 
             "title": "Resources"
+        }, 
+        {
+            "location": "/api_docs/getting_started/#errors", 
+            "text": "To see how Ratemarkt API handles exceptional situations and errors please refer to our  Errors  pages.", 
+            "title": "Errors"
         }, 
         {
             "location": "/api_docs/authentication/", 
@@ -99,6 +109,11 @@
             "location": "/api_docs/cancel_booking/", 
             "text": "", 
             "title": "Cancel Booking Endpoint"
+        }, 
+        {
+            "location": "/api_docs/errors/", 
+            "text": "", 
+            "title": "Errors"
         }, 
         {
             "location": "/sdk_docs/getting_started/", 

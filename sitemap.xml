@@ -69,6 +69,12 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>http://docs.ratemarkt.com/api_docs/errors/</loc>
+     <lastmod>2017-05-15</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
