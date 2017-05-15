@@ -1,4 +1,3 @@
-<script type="text/javascript">
 var zsFeedbackTabPref = {};
 zsFeedbackTabPref.tabTitle = "Contact Us";
 zsFeedbackTabPref.tabColor = "#777777";
@@ -22,4 +21,3 @@ feedbackWidgetCss.setAttribute("rel", "stylesheet");
 feedbackWidgetCss.setAttribute("type", "text/css");
 feedbackWidgetCss.setAttribute("href", "https://css.zohostatic.com/support/fbw_v6/css/ZSFeedbackPopup.css");
 document.head.appendChild(feedbackWidgetCss);
-</script>
