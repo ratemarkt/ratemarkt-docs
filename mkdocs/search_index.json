@@ -2,23 +2,23 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome to Ratemarkt Docs\n\n\nHere you can find plenty of documentation about Ratemarkt.\nFor Ratemarkt introduction please visit \nratemarkt.com\n first.\n\n\nGetting Started with Ratemark\n\n\nPlease choose the most suitable topic below you're looking for.\n\n\n\n\nUser's Guide\n Find out more about how to use every feature of Ratemarkt.\n\n\nApi Docs\n - Get integrated with Ratemarkt Client API.\n\n\nSDK Docs\n - Extend Ratemarkt Client API functionality using SDK.\n\n\nAPI Specs\n - Generic Supplier API Specs to take place as a Supplier in Ratemarkt\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "text": "Welcome to Ratemarkt Docs\n\n\nHere you can find plenty of documentation about Ratemarkt.\n\n\n\n\nWhat is Ratemarkt?\n\n\nFor a comprehensive introduction for Ratemarkt please visit \nRatemarkt Homepage\n first.\n\n\n\n\nGetting Started with Ratemark\n\n\nPlease choose the most suitable topic below you're looking for.\n\n\n\n\n User's Guide\n Find out more about how to use every feature of Ratemarkt.\n\n\n Api Docs\n - Get integrated with Ratemarkt Client API.\n\n\n SDK Docs\n - Extend Ratemarkt Client API functionality using SDK.\n\n\n API Specs\n - Generic Supplier API Specs to take place as a Supplier in Ratemarkt\n\n\n\n\nQuestions?\n\n\nWe'd love to help you in any case you get stuck with Ratemarkt.\nPlease first find answers to the most encountered questions in our \nF.A.Q\n page or reach us by using our \nSupport Center\n\n\nIf you like, you may drop us an email at", 
             "title": "Home"
         }, 
         {
             "location": "/#welcome-to-ratemarkt-docs", 
-            "text": "Here you can find plenty of documentation about Ratemarkt.\nFor Ratemarkt introduction please visit  ratemarkt.com  first.", 
+            "text": "Here you can find plenty of documentation about Ratemarkt.   What is Ratemarkt?  For a comprehensive introduction for Ratemarkt please visit  Ratemarkt Homepage  first.", 
             "title": "Welcome to Ratemarkt Docs"
         }, 
         {
             "location": "/#getting-started-with-ratemark", 
-            "text": "Please choose the most suitable topic below you're looking for.   User's Guide  Find out more about how to use every feature of Ratemarkt.  Api Docs  - Get integrated with Ratemarkt Client API.  SDK Docs  - Extend Ratemarkt Client API functionality using SDK.  API Specs  - Generic Supplier API Specs to take place as a Supplier in Ratemarkt", 
+            "text": "Please choose the most suitable topic below you're looking for.    User's Guide  Find out more about how to use every feature of Ratemarkt.   Api Docs  - Get integrated with Ratemarkt Client API.   SDK Docs  - Extend Ratemarkt Client API functionality using SDK.   API Specs  - Generic Supplier API Specs to take place as a Supplier in Ratemarkt", 
             "title": "Getting Started with Ratemark"
         }, 
         {
-            "location": "/#project-layout", 
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
-            "title": "Project layout"
+            "location": "/#questions", 
+            "text": "We'd love to help you in any case you get stuck with Ratemarkt.\nPlease first find answers to the most encountered questions in our  F.A.Q  page or reach us by using our  Support Center  If you like, you may drop us an email at", 
+            "title": "Questions?"
         }, 
         {
             "location": "/users_guide/getting_started/", 
