@@ -31,12 +31,14 @@ In order to get autheticated against Ratemarkt API please see [Authentication](/
 
 ## Resources
 
-* [Check Hotels](/api_docs/check_hotels.md) Get availabile hotels by using a destination id or multiple hotel ids.
-* [Check Hotel](/api_docs/check_hotel.md) Single hotel availability for more recent data.
-* [Check Rate](/api_docs/check_rate.md) Single rate availability with the most recent data.
-* [Book Rate](/api_docs/book_rate.md) Make a booking from a selected rate by using its rate key.
-* [Check Booking](/api_docs/check_booking.md) Query the booking status using either booking reference or client reference.
-* [Cancel Booking](/api_docs/cancel_booking.md) Cancel refered booking when desired.
+| Name                                          | Resource Url         | Description                                                                 |
+| --------------------------------------------- | -------------------- | --------------------------------------------------------------------------- |
+| [Check Hotels](/api_docs/check_hotels.md)     | `/v1/checkhotels`    | Get availabile hotels by using a destination id or multiple hotel ids.      |
+| [Check Hotel](/api_docs/check_hotel.md)       | `/v1/checkhotel`     | Single hotel availability for more recent data.                             |
+| [Check Rate](/api_docs/check_rate.md)         | `/v1/checkrate`      | Single rate availability with the most recent data.                         |
+| [Book Rate](/api_docs/book_rate.md)           | `/v1/bookrate`       | Make a booking from a selected rate by using its rate key.                  |
+| [Check Booking](/api_docs/check_booking.md)   | `/v1/checkbooking`   | Query the booking status using either booking reference or client reference.|
+| [Cancel Booking](/api_docs/cancel_booking.md) | `/v1/cancelbooking`  | Cancel refered booking when desired.                                        |
 
 ## Errors
 
