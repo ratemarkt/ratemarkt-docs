@@ -1,7 +1,7 @@
 # Welcome to Ratemarkt Docs
 
 Here you can find plenty of documents about Ratemarkt.
-For Ratemarkt introduction please visit [ratemarkt.org](http://ratemarkt.com) first.
+For Ratemarkt introduction please visit [ratemarkt.com](http://ratemarkt.com) first.
 
 ## Commands
 
