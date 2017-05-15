@@ -1,7 +1,62 @@
 site_name: Ratemarkt Docs
 site_url: http://docs.ratemarkt.com
-theme: material
+site_description: 'Ratemartk Documentation and Knowledge Base Portal'
+site_author: 'Ratemarkt Ltd.'
+
+theme: 'material'
+theme_dir: 'theme'
+
+repo_name: 'ratemarkt/ratemarkt-docs'
+repo_url: 'https://github.com/ratemarkt/ratemarkt-docs'
+
 extra_css:
   - 'css/extra.css'
+
 extra_javascript:
   - 'js/extra.js'
+
+extra:
+  palette:
+    primary: 'Teal'
+    accent: 'Deep Orange'
+  font:
+    text: 'Ubuntu'
+    code: 'Ubuntu Mono'
+  logo: 'img/logo.png'
+  social:
+    - type: 'github'
+      link: 'https://github.com/ratemarkt'
+    - type: 'twitter'
+      link: 'https://twitter.com/ratemarkt'
+    - type: 'linkedin'
+      link: 'https://de.linkedin.com/in/ratemarkt'
+  feature:
+    # tabs: true
+
+markdown_extensions:
+  - admonition
+  - codehilite(guess_lang=false)
+  - pymdownx.arithmatex
+  - pymdownx.betterem(smart_enable=all)
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist(custom_checkbox=true)
+  - pymdownx.tilde
+
+copyright: 'Copyright &copy; 2017 - 2018 Ratemarkt Ltd.'
+
+google_analytics:
+  - 'UA-2040979-10'
+  - 'auto'
+
+pages:
+- Home: 'index.md'
+- About:
+    - 'License': 'about/license.md'
