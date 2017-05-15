@@ -38,7 +38,7 @@ extra:
 
 markdown_extensions:
   - admonition
-  - codehilite(guess_lang=false)
+  - codehilite(guess_lang=false,linenums=true)
   - pymdownx.arithmatex
   - pymdownx.betterem(smart_enable=all)
   - pymdownx.caret
@@ -67,6 +67,13 @@ pages:
     - 'Getting Started': 'users_guide/getting_started.md'
 - 'Api Docs':
     - 'Getting Started': 'api_docs/getting_started.md'
+    - 'Authentication': 'api_docs/authentication.md'
+    - 'Check Hotels Endpoint': 'api_docs/check_hotels.md'
+    - 'Check Hotel Endpoint': 'api_docs/check_hotel.md'
+    - 'Check Rate Endpoint': 'api_docs/check_rate.md'
+    - 'Book Rate Endpoint': 'api_docs/book_rate.md'
+    - 'Check Booking Endpoint': 'api_docs/check_booking.md'
+    - 'Cancel Booking Endpoint': 'api_docs/cancel_booking.md'
 - 'SDK Docs':
     - 'Getting Started': 'sdk_docs/getting_started.md'
 - 'Supply Specs':
