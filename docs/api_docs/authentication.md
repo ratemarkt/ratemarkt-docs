@@ -16,7 +16,7 @@ In order to get authenticated against Ratemarkt API you should first request an 
 
     Please take care of your API keys and keep' em in highly secure environments otherwise attackers would get benefit from your keys on behalf of you once they capture them.
 
-Once you obtain an API Key, the rest is quite easy though. Just put your API Key into your http headers while you make request to Ratemarkt API in order to get granted for all API endpoints.
+Once you obtain an API Key, the rest is quite easy though. Just put your API Key into your http headers while you make request to Ratemarkt API to able to get authenticated.
 
 ### Example
 
