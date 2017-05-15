@@ -272,11 +272,138 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Getting Started
+      </label>
     
     <a href="./" title="Getting Started" class="md-nav__link md-nav__link--active">
       Getting Started
     </a>
     
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#location" title="Location" class="md-nav__link">
+    Location
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication" title="Authentication" class="md-nav__link">
+    Authentication
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" title="Resources" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../authentication/" title="Authentication" class="md-nav__link">
+      Authentication
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../check_hotels/" title="Check Hotels Endpoint" class="md-nav__link">
+      Check Hotels Endpoint
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../check_hotel/" title="Check Hotel Endpoint" class="md-nav__link">
+      Check Hotel Endpoint
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../check_rate/" title="Check Rate Endpoint" class="md-nav__link">
+      Check Rate Endpoint
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../book_rate/" title="Book Rate Endpoint" class="md-nav__link">
+      Book Rate Endpoint
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../check_booking/" title="Check Booking Endpoint" class="md-nav__link">
+      Check Booking Endpoint
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cancel_booking/" title="Cancel Booking Endpoint" class="md-nav__link">
+      Cancel Booking Endpoint
+    </a>
   </li>
 
         
@@ -383,6 +510,36 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#location" title="Location" class="md-nav__link">
+    Location
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication" title="Authentication" class="md-nav__link">
+    Authentication
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" title="Resources" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
   
 </nav>
                   </div>
@@ -397,9 +554,32 @@
                   <a href="https://github.com/ratemarkt/ratemarkt-docs/blob/master/docs/api_docs/getting_started.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
                 
-                  <h1>Getting Started</h1>
-                
-                
+                <h1 id="getting-started">Getting Started</h1>
+<p>Welcome to Ratemarkt Client API.</p>
+<p>Ratemarkt Client API is very intuitive, predictable and simple HTTP based REST-like Json API to make it very easy to get intgerated to Ratemarkt as a client. It just requires single API Key in http request headers and introduces only six end points in total to get all job done with ease.</p>
+<h2 id="location">Location</h2>
+<p>Ratemarkt API is currently located at <code>api.ratemarkt.com</code> domain under <code>v1</code> directory which  denotes the current API version.
+All API calls require a secure http connection (<code>HTTPS</code> over <code>SSL</code>) and must be authenticated using an API Key to get work.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>https://api.ratemarkt.com/v1/
+</pre></div>
+</td></tr></table>
+
+<p>For instance, you should call the url below for check hotels endpoint.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>https://api.ratemarkt.com/v1/checkhotels
+</pre></div>
+</td></tr></table>
+
+<h2 id="authentication">Authentication</h2>
+<p>In order to get autheticated agains Ratemarkt API please see <a href="../authentication/">Authentication</a> page. Once you get authenticated you will be able to access the resources below.</p>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="../check_hotels/">Check Hotels</a> Get availabile hotels by a destination or multiple hotel id information.</li>
+<li><a href="../check_hotel/">Check Hotel</a> Single hotel availability with more recent data.</li>
+<li><a href="../check_rate/">Check Rate</a> Single rate availability with the most recent information by a rate key.</li>
+<li><a href="../book_rate/">Book Rate</a> Make a booking from the selected rate by using rate key.</li>
+<li><a href="../check_booking/">Check Booking</a> Query the booking status using either booking reference or client reference.</li>
+<li><a href="../cancel_booking/">Cancel Booking</a> Cancel refered booking when desired.</li>
+</ul>
                 
                   
                 
@@ -433,13 +613,13 @@
           </a>
         
         
-          <a href="../../sdk_docs/getting_started/" title="Getting Started" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../authentication/" title="Authentication" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Getting Started
+                Authentication
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

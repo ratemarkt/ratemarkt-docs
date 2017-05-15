@@ -27,8 +27,78 @@
         }, 
         {
             "location": "/api_docs/getting_started/", 
-            "text": "", 
+            "text": "Getting Started\n\n\nWelcome to Ratemarkt Client API.\n\n\nRatemarkt Client API is very intuitive, predictable and simple HTTP based REST-like Json API to make it very easy to get intgerated to Ratemarkt as a client. It just requires single API Key in http request headers and introduces only six end points in total to get all job done with ease.\n\n\nLocation\n\n\nRatemarkt API is currently located at \napi.ratemarkt.com\n domain under \nv1\n directory which  denotes the current API version.\nAll API calls require a secure http connection (\nHTTPS\n over \nSSL\n) and must be authenticated using an API Key to get work.\n\n\n1\nhttps://api.ratemarkt.com/v1/\n\n\n\n\n\n\nFor instance, you should call the url below for check hotels endpoint.\n\n\n1\nhttps://api.ratemarkt.com/v1/checkhotels\n\n\n\n\n\n\nAuthentication\n\n\nIn order to get autheticated agains Ratemarkt API please see \nAuthentication\n page. Once you get authenticated you will be able to access the resources below.\n\n\nResources\n\n\n\n\nCheck Hotels\n Get availabile hotels by a destination or multiple hotel id information.\n\n\nCheck Hotel\n Single hotel availability with more recent data.\n\n\nCheck Rate\n Single rate availability with the most recent information by a rate key.\n\n\nBook Rate\n Make a booking from the selected rate by using rate key.\n\n\nCheck Booking\n Query the booking status using either booking reference or client reference.\n\n\nCancel Booking\n Cancel refered booking when desired.", 
             "title": "Getting Started"
+        }, 
+        {
+            "location": "/api_docs/getting_started/#getting-started", 
+            "text": "Welcome to Ratemarkt Client API.  Ratemarkt Client API is very intuitive, predictable and simple HTTP based REST-like Json API to make it very easy to get intgerated to Ratemarkt as a client. It just requires single API Key in http request headers and introduces only six end points in total to get all job done with ease.", 
+            "title": "Getting Started"
+        }, 
+        {
+            "location": "/api_docs/getting_started/#location", 
+            "text": "Ratemarkt API is currently located at  api.ratemarkt.com  domain under  v1  directory which  denotes the current API version.\nAll API calls require a secure http connection ( HTTPS  over  SSL ) and must be authenticated using an API Key to get work.  1 https://api.ratemarkt.com/v1/   For instance, you should call the url below for check hotels endpoint.  1 https://api.ratemarkt.com/v1/checkhotels", 
+            "title": "Location"
+        }, 
+        {
+            "location": "/api_docs/getting_started/#authentication", 
+            "text": "In order to get autheticated agains Ratemarkt API please see  Authentication  page. Once you get authenticated you will be able to access the resources below.", 
+            "title": "Authentication"
+        }, 
+        {
+            "location": "/api_docs/getting_started/#resources", 
+            "text": "Check Hotels  Get availabile hotels by a destination or multiple hotel id information.  Check Hotel  Single hotel availability with more recent data.  Check Rate  Single rate availability with the most recent information by a rate key.  Book Rate  Make a booking from the selected rate by using rate key.  Check Booking  Query the booking status using either booking reference or client reference.  Cancel Booking  Cancel refered booking when desired.", 
+            "title": "Resources"
+        }, 
+        {
+            "location": "/api_docs/authentication/", 
+            "text": "Authenitcation\n\n\nIntroduction\n\n\nIn order to get authenticated against Ratemarkt API you should first request an API Key from your Ratemarkt account holder.\n\n\n\n\nHow to Obtain an API Key\n\n\nPlease see \nClient Accounts\n at \nUser's Guide\n section on how to create a client account to generate API Key tied to that account.\n\n\n\n\n\n\nSecure you API Keys\n\n\nWhile the data on the network is transmitted over a secure connection to the Ratemarkt API servers, securing your API Keys in the wild is your own duty.\n\n\nPlease take care of your API keys and keep' em in highly secure environments otherwise attackers would get benefit from your keys on behalf of you once they capture them.\n\n\n\n\nOnce you obtain an API Key, the rest is quite easy though. Just put your API Key into your http headers while you make request to Ratemarkt API in order to get granted for all API endpoints.\n\n\nExample\n\n\n1\n2\n$ curl -H \nAuthorization: Bearer \nYOUR_API_KEY_HERE\n\\\n    https://api.ratemarkt.com/v1/checkhotels\n -d\nREQUEST_BODY_JSON", 
+            "title": "Authentication"
+        }, 
+        {
+            "location": "/api_docs/authentication/#authenitcation", 
+            "text": "", 
+            "title": "Authenitcation"
+        }, 
+        {
+            "location": "/api_docs/authentication/#introduction", 
+            "text": "In order to get authenticated against Ratemarkt API you should first request an API Key from your Ratemarkt account holder.   How to Obtain an API Key  Please see  Client Accounts  at  User's Guide  section on how to create a client account to generate API Key tied to that account.    Secure you API Keys  While the data on the network is transmitted over a secure connection to the Ratemarkt API servers, securing your API Keys in the wild is your own duty.  Please take care of your API keys and keep' em in highly secure environments otherwise attackers would get benefit from your keys on behalf of you once they capture them.   Once you obtain an API Key, the rest is quite easy though. Just put your API Key into your http headers while you make request to Ratemarkt API in order to get granted for all API endpoints.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/api_docs/authentication/#example", 
+            "text": "1\n2 $ curl -H  Authorization: Bearer  YOUR_API_KEY_HERE \\\n    https://api.ratemarkt.com/v1/checkhotels  -d REQUEST_BODY_JSON", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/api_docs/check_hotels/", 
+            "text": "", 
+            "title": "Check Hotels Endpoint"
+        }, 
+        {
+            "location": "/api_docs/check_hotel/", 
+            "text": "", 
+            "title": "Check Hotel Endpoint"
+        }, 
+        {
+            "location": "/api_docs/check_rate/", 
+            "text": "", 
+            "title": "Check Rate Endpoint"
+        }, 
+        {
+            "location": "/api_docs/book_rate/", 
+            "text": "", 
+            "title": "Book Rate Endpoint"
+        }, 
+        {
+            "location": "/api_docs/check_booking/", 
+            "text": "", 
+            "title": "Check Booking Endpoint"
+        }, 
+        {
+            "location": "/api_docs/cancel_booking/", 
+            "text": "", 
+            "title": "Cancel Booking Endpoint"
         }, 
         {
             "location": "/sdk_docs/getting_started/", 
