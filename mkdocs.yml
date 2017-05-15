@@ -63,5 +63,12 @@ google_analytics:
 
 pages:
 - Home: 'index.md'
-- About:
-    - 'License': 'about/license.md'
+- 'Users Guide':
+    - 'Getting Started': 'users_guide/getting_started.md'
+- 'Api Docs':
+    - 'Getting Started': 'api_docs/getting_started.md'
+- 'SDK Docs':
+    - 'Getting Started': 'sdk_docs/getting_started.md'
+- 'Supply Specs':
+    - 'Getting Started': 'api_specs/getting_started.md'
+- 'F.A.Q': faq.md
