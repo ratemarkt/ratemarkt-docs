@@ -74,6 +74,7 @@ pages:
     - 'Book Rate Endpoint': 'api_docs/book_rate.md'
     - 'Check Booking Endpoint': 'api_docs/check_booking.md'
     - 'Cancel Booking Endpoint': 'api_docs/cancel_booking.md'
+    - 'Errors': 'api_docs/errors.md'
 - 'SDK Docs':
     - 'Getting Started': 'sdk_docs/getting_started.md'
 - 'Supply Specs':

@@ -2,11 +2,17 @@
 
 Welcome to Ratemarkt Client API.
 
-Ratemarkt Client API is very intuitive, predictable and simple HTTP based REST-like Json API to make it very easy to get intgerated to Ratemarkt as a client. It just requires single API Key in http request headers and introduces only six end points in total to get all job done with ease.
+## Introduction
+
+Ratemarkt Client API is quite intuitive, predictable and very easy http based json API to make it very easy to get intgerated with Ratemarkt as a client.
+
+It just requires a single API key in http headers to get authenticated and introduces only six end points in total to get all job done with ease.
 
 ## Location
-Ratemarkt API is currently located at `api.ratemarkt.com` domain under `v1` directory which  denotes the current API version.
-All API calls require a secure http connection (`HTTPS` over `SSL`) and must be authenticated using an API Key to get work.
+Ratemarkt API is currently located at `api.ratemarkt.com` domain under `v1` directory which also denotes the current API version.
+All calls require a secure http connection (`HTTPS`, `SSL`) and must be authenticated using an API key to get work.
+
+Here is the base url for all API calls.
 
 ```
 https://api.ratemarkt.com/v1/
@@ -31,3 +37,6 @@ In order to get autheticated agains Ratemarkt API please see [Authentication](/a
 * [Check Booking](/api_docs/check_booking.md) Query the booking status using either booking reference or client reference.
 * [Cancel Booking](/api_docs/cancel_booking.md) Cancel refered booking when desired.
 
+## Errors
+
+To see how Ratemarkt API handles exceptional situations and errors please refer to our [Errors](/api_docs/errors.md) pages.
