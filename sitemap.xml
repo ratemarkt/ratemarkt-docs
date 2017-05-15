@@ -75,6 +75,12 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>http://docs.ratemarkt.com/api_docs/client_libraries/</loc>
+     <lastmod>2017-05-15</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
@@ -95,6 +101,14 @@
      <changefreq>daily</changefreq>
     </url>
         
+    
+
+    
+    <url>
+     <loc>http://docs.ratemarkt.com/open_source/</loc>
+     <lastmod>2017-05-15</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
     
 
     
