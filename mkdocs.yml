@@ -14,9 +14,7 @@ extra_css:
   - 'css/extra.css'
 
 extra_javascript:
-  - 'https://code.jquery.com/jquery-3.2.1.slim.min.js'
-  - 'https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.js'
-  - 'js/extra.js'
+  - 'js/feedback.js'
 
 extra:
   palette:
@@ -54,6 +52,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tasklist(custom_checkbox=true)
   - pymdownx.tilde
+  - fontawesome_markdown
+
 
 copyright: 'Copyright &copy; 2017 - 2018 Ratemarkt Ltd.'
 
