@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome to Ratemarkt Docs\n\n\nHere you can find plenty of documentation about Ratemarkt.\n\n\n\n\nWhat is Ratemarkt?\n\n\nFor a comprehensive introduction for Ratemarkt please visit \nRatemarkt Homepage\n first.\n\n\n\n\nGetting Started with Ratemark\n\n\nPlease choose the most suitable topic below you're looking for.\n\n\n\n\nUser's Guide\n Find out more about how to use every feature of Ratemarkt.\n\n\nApi Docs\n - Get integrated with Ratemarkt Client API.\n\n\nSDK Docs\n - Extend Ratemarkt Client API functionality using SDK.\n\n\nAPI Specs\n - Generic Supplier API Specs to take place as a Supplier in Ratemarkt\n\n\n\n\nQuestions?\n\n\nWe'd love to help you in any case you get stuck with Ratemarkt.\nPlease first find answers to the most encountered questions in our \nF.A.Q\n page or reach us by using our \nSupport Center\n\n\nIf you like, you may drop us an email at", 
+            "text": "Welcome to Ratemarkt Docs\n\n\nHere you can find plenty of documentation about Ratemarkt.\n\n\n\n\nWhat is Ratemarkt?\n\n\nFor a comprehensive introduction for Ratemarkt please visit \nRatemarkt Homepage\n first.\n\n\n\n\nGetting Started with Ratemark\n\n\nPlease choose the most suitable topic below you're looking for.\n\n\n\n\nUser's Guide\n Find out more about how to use every feature of Ratemarkt.\n\n\nApi Docs\n - Get integrated with Ratemarkt Client API.\n\n\nSDK Docs\n - Extend Ratemarkt Client API functionality using SDK.\n\n\nAPI Specs\n - Generic Supplier API Specs to take place as a Supplier in Ratemarkt\n\n\n\n\n\n\nRatemarkt Docs is under construction\n\n\nSorry for inconvenience but Ratemark Docs site is heavily under construction at the moment and many parts are still being prepared.\n\n\nOnly the \nApi Docs\n part is mostly done at the time being.\n\n\nSo stay tuned and check again later if you could not find something you're looking for. Or you might want to send us an email at \n for any kind of information.\n\n\n\n\nQuestions?\n\n\nWe'd love to help you in any case you get stuck with Ratemarkt.\nPlease first find answers to the most encountered questions in our \nF.A.Q\n page or reach us by using our \nSupport Center\n\n\nIf you like, you may drop us an email at", 
             "title": "Home"
         }, 
         {
@@ -12,7 +12,7 @@
         }, 
         {
             "location": "/#getting-started-with-ratemark", 
-            "text": "Please choose the most suitable topic below you're looking for.   User's Guide  Find out more about how to use every feature of Ratemarkt.  Api Docs  - Get integrated with Ratemarkt Client API.  SDK Docs  - Extend Ratemarkt Client API functionality using SDK.  API Specs  - Generic Supplier API Specs to take place as a Supplier in Ratemarkt", 
+            "text": "Please choose the most suitable topic below you're looking for.   User's Guide  Find out more about how to use every feature of Ratemarkt.  Api Docs  - Get integrated with Ratemarkt Client API.  SDK Docs  - Extend Ratemarkt Client API functionality using SDK.  API Specs  - Generic Supplier API Specs to take place as a Supplier in Ratemarkt    Ratemarkt Docs is under construction  Sorry for inconvenience but Ratemark Docs site is heavily under construction at the moment and many parts are still being prepared.  Only the  Api Docs  part is mostly done at the time being.  So stay tuned and check again later if you could not find something you're looking for. Or you might want to send us an email at   for any kind of information.", 
             "title": "Getting Started with Ratemark"
         }, 
         {
@@ -22,7 +22,7 @@
         }, 
         {
             "location": "/users_guide/getting_started/", 
-            "text": "", 
+            "text": "Coming soon.", 
             "title": "Getting Started"
         }, 
         {
@@ -237,8 +237,18 @@
         }, 
         {
             "location": "/api_docs/book_rate/", 
-            "text": "", 
+            "text": "Introduction\n\n\nPerform booking by providing occupancy and payment information for any selected rate specified by the rate key.\n\n\nDefinition\n\n\n1\nPOST https://api.ratemarkt.com/v1/bookrate", 
             "title": "Book Rate"
+        }, 
+        {
+            "location": "/api_docs/book_rate/#introduction", 
+            "text": "Perform booking by providing occupancy and payment information for any selected rate specified by the rate key.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/api_docs/book_rate/#definition", 
+            "text": "1 POST https://api.ratemarkt.com/v1/bookrate", 
+            "title": "Definition"
         }, 
         {
             "location": "/api_docs/check_booking/", 
@@ -262,22 +272,22 @@
         }, 
         {
             "location": "/sdk_docs/getting_started/", 
-            "text": "", 
+            "text": "Coming soon.", 
             "title": "Getting Started"
         }, 
         {
             "location": "/api_specs/getting_started/", 
-            "text": "", 
+            "text": "Coming soon.", 
             "title": "Getting Started"
         }, 
         {
             "location": "/open_source/", 
-            "text": "", 
+            "text": "Coming soon.", 
             "title": "Open Source"
         }, 
         {
             "location": "/faq/", 
-            "text": "", 
+            "text": "Coming soon.", 
             "title": "F.A.Q"
         }
     ]
