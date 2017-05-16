@@ -653,47 +653,54 @@
 <h2 id="authentication">Authentication</h2>
 <p>In order to get autheticated against Ratemarkt API please see <a href="../authentication/">Authentication</a> page. Once you get authenticated you will be able to access the resources below.</p>
 <h2 id="resources">Resources</h2>
+<p>All the API resources below accepts a JSON query object via HTTP post method for the sake of simplicity.</p>
 <table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Resource Url</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../check_hotels/">Check Hotels</a></td>
-<td><code>/v1/checkhotels</code></td>
-<td>Get availabile hotels by using a destination id or multiple hotel ids.</td>
-</tr>
-<tr>
-<td><a href="../check_hotel/">Check Hotel</a></td>
-<td><code>/v1/checkhotel</code></td>
-<td>Single hotel availability for more recent data.</td>
-</tr>
-<tr>
-<td><a href="../check_rate/">Check Rate</a></td>
-<td><code>/v1/checkrate</code></td>
-<td>Single rate availability with the most recent data.</td>
-</tr>
-<tr>
-<td><a href="../book_rate/">Book Rate</a></td>
-<td><code>/v1/bookrate</code></td>
-<td>Make a booking from a selected rate by using its rate key.</td>
-</tr>
-<tr>
-<td><a href="../check_booking/">Check Booking</a></td>
-<td><code>/v1/checkbooking</code></td>
-<td>Query the booking status using either booking reference or client reference.</td>
-</tr>
-<tr>
-<td><a href="../cancel_booking/">Cancel Booking</a></td>
-<td><code>/v1/cancelbooking</code></td>
-<td>Cancel refered booking when desired.</td>
-</tr>
-</tbody>
+    <colgroup>
+        <col width="20%">
+        <col width="20%">
+        <col width="60%">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Resource Path</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="/api_docs/check_hotels/" >Check Hotels</a></td>
+            <td><code>/checkhotels</code></td>
+            <td>Get availabile hotels by using a destination id or a list of hotel codes.</td>
+        </tr>
+        <tr>
+            <td><a href="/api_docs/check_hotel/" >Check Hotel</a></td>
+            <td><code>/checkhotel</code></td>
+            <td>Single hotel availability for more recent data.</td>
+        </tr>
+        <tr>
+            <td><a href="/api_docs/check_rate" >Check Rate</a></td>
+            <td><code>/checkrate</code></td>
+            <td>Single rate availability with the most recent data.</td>
+        </tr>
+        <tr>
+            <td><a href="/api_docs/book_rate/" >Book Rate</a></td>
+            <td><code>/bookrate</code></td>
+            <td>Make a booking from a selected rate by using its rate key.</td>
+        </tr>
+        <tr>
+            <td><a href="/api_docs/check_booking/" >Check Booking</a></td>
+            <td><code>/checkbooking</code></td>
+            <td>Query the booking status using either booking reference or client reference.</td>
+        </tr>
+        <tr>
+            <td><a href="/api_docs/cancel_booking/" >Cancel Booking</a></td>
+            <td><code>/cancelbooking</code></td>
+            <td>Cancel refered booking when desired.</td>
+        </tr>
+    </tbody>
 </table>
+
 <h2 id="errors">Errors</h2>
 <p>To see how Ratemarkt API handles exceptional situations and errors please refer to our <a href="../errors/">Errors</a> pages.</p>
 <h2 id="client-libraries">Client Libraries</h2>
