@@ -89,5 +89,49 @@ To see how Ratemarkt API handles exceptional situations and errors please refer 
 Are you looking for a client library for your favorite programming language?
 Then you should take a look at our [Client Libraries](/api_docs/client_libraries.md) section .
 
+## Example API Request / Response
 
-
+```bash
+$ curl -X POST -H "Authorization: Bearer <YOUR_API_KEY_HERE>" https://api.ratemarkt.com/v1/checkrate -d'{
+    "rateKey": "[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|5pyO3Q|[jVOYrg|2|0]]"
+}'
+...
+{
+  "hotel": {
+    "hotelCode": "d31d12",
+    "hotelName": "The Marmara Taksim",
+    "destinationCode": "c36ca9",
+    "destinationName": "istanbul",
+    "countryCode": "TR",
+    "rates": [
+      {
+        "rateType": "NET",
+        "rateKey": "[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|5pyO3Q|[jVOYrg|2|0]]",
+        "nonrefundable": false,
+        "boardName": "BED AND BREAKFAST",
+        "rate": 591.19,
+        "currency": "EUR",
+        "rooms": [
+          {
+            "numberOfAdults": 2,
+            "numberOfChildren": 0,
+            "roomDescription": "DOUBLE DELUXE CITY VIEW",
+            "sequence": 1
+          }
+        ],
+        "cancellationPolicies": [
+          {
+            "amount": 175.95,
+            "fromDate": "2017-07-19T23:59:00+03:00"
+          }
+        ],
+        "remarks": "CONTRACT VALID FOR JUNIOR ROOM TYPES .  Check-in hour 15:00 - .",
+        "commission": null,
+        "hotelCurrency": null,
+        "hotelRate": null
+      }
+    ]
+  }
+}
+'
+```

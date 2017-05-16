@@ -55,6 +55,7 @@ markdown_extensions:
   - fontawesome_markdown
 
 
+
 copyright: 'Copyright &copy; 2017 - 2018 Ratemarkt Ltd.'
 
 google_analytics:
