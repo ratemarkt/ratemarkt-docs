@@ -12,10 +12,10 @@ Here you can find plenty of documentation about Ratemarkt.
 
 Please choose the most suitable topic below you're looking for.
 
-* [:fa-book: User's Guide](users_guide/getting_started.md) Find out more about how to use every feature of Ratemarkt.
-* [:fa-book: Api Docs](api_docs/getting_started.md) - Get integrated with Ratemarkt Client API.
-* [:fa-book: SDK Docs](api_docs/getting_started.md) - Extend Ratemarkt Client API functionality using SDK.
-* [:fa-book: API Specs](api_docs/getting_started.md) - Generic Supplier API Specs to take place as a Supplier in Ratemarkt
+* [User's Guide](users_guide/getting_started.md) Find out more about how to use every feature of Ratemarkt.
+* [Api Docs](api_docs/getting_started.md) - Get integrated with Ratemarkt Client API.
+* [SDK Docs](api_docs/getting_started.md) - Extend Ratemarkt Client API functionality using SDK.
+* [API Specs](api_docs/getting_started.md) - Generic Supplier API Specs to take place as a Supplier in Ratemarkt
 
 ## Questions?
 
