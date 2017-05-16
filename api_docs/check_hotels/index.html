@@ -333,8 +333,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#arguments" title="Arguments" class="md-nav__link">
-    Arguments
+  <a href="#query-object" title="Query Object" class="md-nav__link">
+    Query Object
   </a>
   
 </li>
@@ -345,8 +345,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-requests" title="Example Requests" class="md-nav__link">
-    Example Requests
+  <a href="#example-query-objects" title="Example Query Objects" class="md-nav__link">
+    Example Query Objects
   </a>
   
     <nav class="md-nav">
@@ -362,6 +362,33 @@
           <li class="md-nav__item">
   <a href="#multi-room-query-for-a-certain-destination" title="Multi room query for a certain destination" class="md-nav__link">
     Multi room query for a certain destination
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#result-object" title="Result Object" class="md-nav__link">
+    Result Object
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-result-object" title="Example Result Object" class="md-nav__link">
+    Example Result Object
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#single-room-result-object" title="Single Room Result Object" class="md-nav__link">
+    Single Room Result Object
   </a>
   
 </li>
@@ -601,8 +628,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#arguments" title="Arguments" class="md-nav__link">
-    Arguments
+  <a href="#query-object" title="Query Object" class="md-nav__link">
+    Query Object
   </a>
   
 </li>
@@ -613,8 +640,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-requests" title="Example Requests" class="md-nav__link">
-    Example Requests
+  <a href="#example-query-objects" title="Example Query Objects" class="md-nav__link">
+    Example Query Objects
   </a>
   
     <nav class="md-nav">
@@ -630,6 +657,33 @@
           <li class="md-nav__item">
   <a href="#multi-room-query-for-a-certain-destination" title="Multi room query for a certain destination" class="md-nav__link">
     Multi room query for a certain destination
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#result-object" title="Result Object" class="md-nav__link">
+    Result Object
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-result-object" title="Example Result Object" class="md-nav__link">
+    Example Result Object
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#single-room-result-object" title="Single Room Result Object" class="md-nav__link">
+    Single Room Result Object
   </a>
   
 </li>
@@ -664,7 +718,7 @@
 </pre></div>
 </td></tr></table>
 
-<h3 id="arguments">Arguments</h3>
+<h3 id="query-object">Query Object</h3>
 <table>
     <colgroup>
         <col width="20%">
@@ -683,55 +737,55 @@
     <tbody>
         <tr>
             <td><code>destinationCode</code></td>
-            <td><code>String</code></td>
+            <td><code>string</code></td>
             <td>optional*</td>
             <td>Destination code.</td>
         </tr>
         <tr>
             <td><code>hotelCodes</code></td>
-            <td><code>List[String]</code></td>
+            <td><code>list[string]</code></td>
             <td>optional*</td>
             <td>List of hotel codes.</td>
         </tr>
         <tr>
             <td><code>checkin</code></td>
-            <td><code>String</code></td>
+            <td><code>string</code></td>
             <td>yes</td>
-            <td>ISO 8601 formatted date string. Eg. 2017-11-12</td>
+            <td><code>YYYY-MM-DD</code> (ISO 8601) formatted date string. Eg. 2017-11-12</td>
         </tr>
         <tr>
             <td><code>checkout</code></td>
-            <td><code>String</code></td>
+            <td><code>string</code></td>
             <td>yes</td>
-            <td>ISO 8601 formatted date string. Eg. 2017-11-15</td>
+            <td><code>YYYY-MM-DD</code> (ISO 8601) formatted date string. Eg. 2017-11-15</td>
         </tr>
         <tr>
             <td><code>paxes</code></td>
-            <td><code>List[Pax]</code></td>
+            <td><code>list[Pax]</code></td>
             <td>yes</td>
             <td>List of pax objects. Each pax object corresponds to a room. Multi room queries need more than one pax object.</td>
         </tr>
         <tr>
             <td><code>Pax.numberOfAdults</code></td>
-            <td><code>Integer</code></td>
+            <td><code>integer</code></td>
             <td>yes</td>
             <td>Number of adults for the specified room.</td>
         </tr>
         <tr>
             <td><code>Pax.childrenAges</code></td>
-            <td><code>List[Integer]</code></td>
+            <td><code>list[integer]</code></td>
             <td>yes</td>
             <td>List of children ages for the specified room.</td>
         </tr>
         <tr>
             <td><code>currency</code></td>
-            <td><code>String</code></td>
+            <td><code>string</code></td>
             <td>yes</td>
             <td>Three letter currency code (ISO-4217). Only USD, EUR and GBP currencies are supported at the moment.</td>
         </tr>
         <tr>
             <td><code>nationality</code></td>
-            <td><code>String</code></td>
+            <td><code>string</code></td>
             <td>yes</td>
             <td>Two letter country code (ISO 3166-1 alpha-2) for occupants passport nationality.</td>
         </tr>
@@ -739,10 +793,15 @@
 </table>
 
 <div class="admonition warning">
-<p class="admonition-title">Optional* Arguments</p>
+<p class="admonition-title">About Optional* Arguments</p>
 <p>You should provide either one of <code>destinationCode</code> argument or <code>hotelCodes</code> argument to get your availability query work.</p>
 </div>
-<h2 id="example-requests">Example Requests</h2>
+<div class="admonition danger">
+<p class="admonition-title">Beware Destination Based Queries</p>
+<p>Some popular travel destinations contain huge amount of hotels thus your queries may take much longer time then expected.</p>
+<p>We strongly recommend hotel list based queries so that you can perform your queries for only the hotels you interested in and get back corresponding results in much shorter times rather than receiving a bulk.</p>
+</div>
+<h2 id="example-query-objects">Example Query Objects</h2>
 <h3 id="single-room-query-for-certain-hotels">Single room query for certain hotels</h3>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -754,17 +813,17 @@
  8
  9
 10
-11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ curl -X POST https://api.ratemarkt.com/v1/checkhotels -d&#39;{
-    &quot;hotelCodes&quot;: [&quot;d31d12&quot;, &quot;69af45&quot;, &quot;984767&quot;],
-    &quot;checkin&quot;: &quot;2017-07-22&quot;,
-    &quot;checkout&quot;: &quot;2017-07-25&quot;,
-    &quot;paxes&quot;: [{
-        &quot;numberOfAdults&quot;: 2,
-        &quot;childrenAges&quot;: []
-    }],
-    &quot;currency&quot;: &quot;USD&quot;,
-    &quot;nationality&quot;: &quot;US&quot;
-}&#39;
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;hotelCodes&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;d31d12&quot;</span><span class="p">,</span> <span class="s2">&quot;69af45&quot;</span><span class="p">,</span> <span class="s2">&quot;984767&quot;</span><span class="p">],</span>
+    <span class="nt">&quot;checkin&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-07-22&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;checkout&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-07-25&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;paxes&quot;</span><span class="p">:</span> <span class="p">[{</span>
+        <span class="nt">&quot;numberOfAdults&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+        <span class="nt">&quot;childrenAges&quot;</span><span class="p">:</span> <span class="p">[]</span>
+    <span class="p">}],</span>
+    <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;USD&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nationality&quot;</span><span class="p">:</span> <span class="s2">&quot;US&quot;</span>
+<span class="p">}</span>
 </pre></div>
 </td></tr></table>
 
@@ -782,20 +841,397 @@
 11
 12
 13
-14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ curl -X POST https://api.ratemarkt.com/v1/checkhotels -d&#39;{
-    &quot;destinationCode&quot;: &quot;d31d12&quot;,
-    &quot;checkin&quot;: &quot;2017-07-22&quot;,
-    &quot;checkout&quot;: &quot;2017-07-25&quot;,
-    &quot;paxes&quot;: [{
-        &quot;numberOfAdults&quot;: 1,
-        &quot;childrenAges&quot;: []
-    }, {
-        &quot;numberOfAdults&quot;: 2,
-        &quot;childrenAges&quot;: [3, 5]
-    }],
-    &quot;currency&quot;: &quot;USD&quot;,
-    &quot;nationality&quot;: &quot;US&quot;
-}&#39;
+14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;destinationCode&quot;</span><span class="p">:</span> <span class="s2">&quot;d31d12&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;checkin&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-07-22&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;checkout&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-07-25&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;paxes&quot;</span><span class="p">:</span> <span class="p">[{</span>
+        <span class="nt">&quot;numberOfAdults&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="nt">&quot;childrenAges&quot;</span><span class="p">:</span> <span class="p">[]</span>
+    <span class="p">},</span> <span class="p">{</span>
+        <span class="nt">&quot;numberOfAdults&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+        <span class="nt">&quot;childrenAges&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+    <span class="p">}],</span>
+    <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;USD&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;nationality&quot;</span><span class="p">:</span> <span class="s2">&quot;US&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table>
+
+<h2 id="result-object">Result Object</h2>
+<table>
+    <colgroup>
+        <col width="20%">
+        <col width="25%">
+        <col width="5%">
+        <col width="50%">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Argument</th>
+            <th>Type</th>
+            <th>Nullable</th>
+            <th width="33%">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>hotels</code></td>
+            <td><code>list[Hotel]</code></td>
+            <td>no</td>
+            <td>List of available hotels</td>
+        </tr>
+        <tr>
+            <td><code>Hotel.hotelCode</code></td>
+            <td><code>string</code></td>
+            <td>no</td>
+            <td>Unique hotel identifier</td>
+        </tr>
+        <tr>
+            <td><code>Hotel.hotelName</code></td>
+            <td><code>string</code></td>
+            <td>no</td>
+            <td>Name of the hotel</td>
+        </tr>
+        <tr>
+            <td><code>Hotel.destinationCode</code></td>
+            <td><code>string</code></td>
+            <td>no</td>
+            <td>Unique destination identifier of the hotel</td>
+        </tr>
+        <tr>
+            <td><code>Hotel.destinationName</code></td>
+            <td><code>string</code></td>
+            <td>no</td>
+            <td>Name of the destination</td>
+        </tr>
+        <tr>
+            <td><code>Hotel.countryCode</code></td>
+            <td><code>string</code></td>
+            <td>no</td>
+            <td>Two letter country code (ISO 3166-1 alpha-2) of the hotel</td>
+        </tr>
+        <tr>
+            <td><code>Hotel.rates</code></td>
+            <td><code>list[Rate]</code></td>
+            <td>no</td>
+            <td>List of rate objects. Each rate corresponds to a hotel room combined with a service level which means a bookable product with a price for each hotel.</td>
+        </tr>
+        <tr>
+            <td><code>Rate.rateType</code></td>
+            <td><code>string</code></td>
+            <td>no</td>
+            <td>Type of the rate. There are three types:
+                <ul>
+                    <li><code>NET</code>: This type of rate can be selled by applying any margin on top of it.</li>
+                    <li><code>SALE</code>: Commissionable rate which should be selled exactly at the given rate.</li>
+                    <li><code>DIRECT</code>: Commissionable rate which the amount is payed directly to the hotelier by the occupants at the time of arrival. </li>
+                </ul>
+                For commissionable rates, the amount of commission for the merchant is denoted at <code>Rate.commission</code> field.
+            </td>
+        </tr>
+        <tr>
+            <td><code>Rate.rateKey</code></td>
+            <td><code>string</code></td>
+            <td>no</td>
+            <td>Unique identifier for each rate.</td>
+        </tr>
+        <tr>
+            <td><code>Rate.nonrefundable</code></td>
+            <td><code>boolean</code></td>
+            <td>yes</td>
+            <td>
+                Flag denoting whether the rate is refundable or not. It means that if any nonrefundable rate is booked, cancellation of that booking won't be refunded in any cases.<br/><br/>
+                Value can be <code>null</code> in some cases so please refer to the corresponding <code>Rate.cancellation_policies</code> field for that rate for money refunding policy at the time of cancellation.
+            </td>
+        </tr>
+        <tr>
+            <td><code>Rate.boardName</code></td>
+            <td><code>string</code></td>
+            <td>no</td>
+            <td>Boarding type of the rate. It can be any arbitrary identifier depending on corresponding hotel's boarding policy.</td>
+        </tr>
+        <tr>
+            <td><code>Rate.rate</code></td>
+            <td><code>decimal</code></td>
+            <td>no</td>
+            <td>Total amount of the rate at given currency specified in <code>Rate.currency</code> field.</td>
+        </tr>
+        <tr>
+            <td><code>Rate.currency</code></td>
+            <td><code>string</code></td>
+            <td>no</td>
+            <td>Three letter currency code (ISO-4217) of the total amount for the rate specified in <code>Rate.rate</code> field</td>
+        </tr>
+        <tr>
+            <td><code>Rate.rooms</code></td>
+            <td><code>list[Room]</code></td>
+            <td>no</td>
+            <td>
+                List of room objects.<br/><br/>
+                <strong>Please not that the number of rooms are not guaranteed to match the number of pax objects specified in <u>multi-pax</u> queries.</strong><br/><br/>
+                Some rates might return single room separately to conform the number of paxes specified in the query while some might return multi rooms per rate.<br/></br/>
+                <strong>If you choose separate rates for your multi pax query you should perform individual bookings for each of those rates separately.</strong>
+            </td>
+        </tr>
+        <tr>
+            <td><code>Room.numberOfAdults</code></td>
+            <td><code>integer</code></td>
+            <td>no</td>
+            <td>Maximum number of adults can fit into this room</td>
+        </tr>
+        <tr>
+            <td><code>Room.childrenAges</code></td>
+            <td><code>list[integer]</code></td>
+            <td>no</td>
+            <td>Children with specified ages can be accepted for this room.</td>
+        </tr>
+        <tr>
+            <td><code>Room.roomDescription</code></td>
+            <td><code>string</code></td>
+            <td>no</td>
+            <td>Any arbitrary description for this room which the hotelier specified.</td>
+        </tr>
+        <tr>
+            <td><code>Room.roomSequence</code></td>
+            <td><code>integer</code></td>
+            <td>no</td>
+            <td>Room sequence identifier which is useful at the time of booking in order to specify which occupant set will be matched with which room.</td>
+        </tr>
+        <tr>
+            <td><code>Rate.cancellationPolicies</code></td>
+            <td><code>list[CancellationPolicy]</code></td>
+            <td>no</td>
+            <td>
+                List of CancellationPolicy objects.<br/><br/>
+                Cancellation policies indicates the amount of penalty charged and deducted from the total refund amount of the booking at the time of cancellation performed after the specified date and time.
+            </td>
+        </tr>
+        <tr>
+            <td><code>CancellationPolicy.amount</code></td>
+            <td><code>decimal</code></td>
+            <td>no</td>
+            <td>Penalty amount in rate's currency specified in <code>Rate.currency</code> field</td>
+        </tr>
+        <tr>
+            <td><code>CancellationPolicy.fromDate</code></td>
+            <td><code>string</code></td>
+            <td>no</td>
+            <td>Offset date time string in <code>YYYY-MM-DDThh:mmTZD</code> (ISO 8601) format indicating from when the polciy applied.</td>
+        </tr>
+        <tr>
+            <td><code>Rate.remarks</code></td>
+            <td><code>string</code></td>
+            <td>yes</td>
+            <td>Any comments, warnings or policies applied by the hotel displayed here if available.</td>
+        </tr>
+        <tr>
+            <td><code>Rate.commission</code></td>
+            <td><code>decimal</code></td>
+            <td>yes</td>
+            <td>Amount of comission specified for commissionable rates.</td>
+        </tr>
+        <tr>
+            <td><code>Rate.hotelRate</code></td>
+            <td><code>decimal</code></td>
+            <td>yes</td>
+            <td>
+                Total amount of rate in hotelier's currency specified in <code>hotelCurrency</code> field which will be payed to the hotelier by the occupants at the time of arrival.
+                This field should not be <code>null</code> when the <code>Rate.rateType</code> is <code>DIRECT</code>
+            </td>
+        </tr>
+        <tr>
+            <td><code>Rate.hotelCurrency</code></td>
+            <td><code>string</code></td>
+            <td>yes</td>
+            <td>Three letter currency code (ISO-4217) of the total amount for the hotel rate specified in <code>Rate.hotelRate</code> field</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 id="example-result-object">Example Result Object</h2>
+<h3 id="single-room-result-object">Single Room Result Object</h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;hotels&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;hotelCode&quot;</span><span class="p">:</span> <span class="s2">&quot;d31d12&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;hotelName&quot;</span><span class="p">:</span> <span class="s2">&quot;The Marmara Taksim&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;destinationCode&quot;</span><span class="p">:</span> <span class="s2">&quot;c36ca9&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;destinationName&quot;</span><span class="p">:</span> <span class="s2">&quot;istanbul&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;countryCode&quot;</span><span class="p">:</span> <span class="s2">&quot;TR&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;rates&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;rateType&quot;</span><span class="p">:</span> <span class="s2">&quot;NET&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;rateKey&quot;</span><span class="p">:</span> <span class="s2">&quot;[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|Prabrg|[jVOYrg|2|0]]&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;nonrefundable&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+          <span class="nt">&quot;boardName&quot;</span><span class="p">:</span> <span class="s2">&quot;ROOM ONLY&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;rate&quot;</span><span class="p">:</span> <span class="mf">493.18</span><span class="p">,</span>
+          <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;EUR&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;rooms&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;numberOfAdults&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+              <span class="nt">&quot;numberOfChildren&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+              <span class="nt">&quot;roomDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;DOUBLE DELUXE CITY VIEW&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;sequence&quot;</span><span class="p">:</span> <span class="mi">1</span>
+            <span class="p">}</span>
+          <span class="p">],</span>
+          <span class="nt">&quot;cancellationPolicies&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mf">146.78</span><span class="p">,</span>
+              <span class="nt">&quot;fromDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-07-19T23:59:00+03:00&quot;</span>
+            <span class="p">}</span>
+          <span class="p">],</span>
+          <span class="nt">&quot;remarks&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+          <span class="nt">&quot;commission&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+          <span class="nt">&quot;hotelCurrency&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+          <span class="nt">&quot;hotelRate&quot;</span><span class="p">:</span> <span class="kc">null</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;rateType&quot;</span><span class="p">:</span> <span class="s2">&quot;NET&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;rateKey&quot;</span><span class="p">:</span> <span class="s2">&quot;[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|Prabrg|[jVOYrg|2|0]]&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;nonrefundable&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+          <span class="nt">&quot;boardName&quot;</span><span class="p">:</span> <span class="s2">&quot;ROOM ONLY&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;rate&quot;</span><span class="p">:</span> <span class="mf">585.08</span><span class="p">,</span>
+          <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;EUR&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;rooms&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;numberOfAdults&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+              <span class="nt">&quot;numberOfChildren&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+              <span class="nt">&quot;roomDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;DOUBLE DELUXE CITY VIEW&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;sequence&quot;</span><span class="p">:</span> <span class="mi">1</span>
+            <span class="p">}</span>
+          <span class="p">],</span>
+          <span class="nt">&quot;cancellationPolicies&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mf">174.13</span><span class="p">,</span>
+              <span class="nt">&quot;fromDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-07-19T23:59:00+03:00&quot;</span>
+            <span class="p">}</span>
+          <span class="p">],</span>
+          <span class="nt">&quot;remarks&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+          <span class="nt">&quot;commission&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+          <span class="nt">&quot;hotelCurrency&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+          <span class="nt">&quot;hotelRate&quot;</span><span class="p">:</span> <span class="kc">null</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;rateType&quot;</span><span class="p">:</span> <span class="s2">&quot;NET&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;rateKey&quot;</span><span class="p">:</span> <span class="s2">&quot;[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|5pyO3Q|[jVOYrg|2|0]]&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;nonrefundable&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+          <span class="nt">&quot;boardName&quot;</span><span class="p">:</span> <span class="s2">&quot;BED AND BREAKFAST&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;rate&quot;</span><span class="p">:</span> <span class="mf">591.19</span><span class="p">,</span>
+          <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;EUR&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;rooms&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;numberOfAdults&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+              <span class="nt">&quot;numberOfChildren&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+              <span class="nt">&quot;roomDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;DOUBLE DELUXE CITY VIEW&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;sequence&quot;</span><span class="p">:</span> <span class="mi">1</span>
+            <span class="p">}</span>
+          <span class="p">],</span>
+          <span class="nt">&quot;cancellationPolicies&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+              <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mf">175.95</span><span class="p">,</span>
+              <span class="nt">&quot;fromDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-07-19T23:59:00+03:00&quot;</span>
+            <span class="p">}</span>
+          <span class="p">],</span>
+          <span class="nt">&quot;remarks&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+          <span class="nt">&quot;commission&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+          <span class="nt">&quot;hotelCurrency&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+          <span class="nt">&quot;hotelRate&quot;</span><span class="p">:</span> <span class="kc">null</span>
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
 </pre></div>
 </td></tr></table>
                 

@@ -335,6 +335,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#example-api-request-response" title="Example API Request / Response" class="md-nav__link">
+    Example API Request / Response
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -615,6 +622,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#example-api-request-response" title="Example API Request / Response" class="md-nav__link">
+    Example API Request / Response
+  </a>
+  
+</li>
+      
       
       
     </ul>
@@ -706,6 +720,92 @@
 <h2 id="client-libraries">Client Libraries</h2>
 <p>Are you looking for a client library for your favorite programming language?
 Then you should take a look at our <a href="../client_libraries/">Client Libraries</a> section .</p>
+<h2 id="example-api-request-response">Example API Request / Response</h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ curl -X POST -H <span class="s2">&quot;Authorization: Bearer &lt;YOUR_API_KEY_HERE&gt;&quot;</span> https://api.ratemarkt.com/v1/checkrate -d<span class="s1">&#39;{</span>
+<span class="s1">    &quot;rateKey&quot;: &quot;[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|5pyO3Q|[jVOYrg|2|0]]&quot;</span>
+<span class="s1">}&#39;</span>
+...
+<span class="o">{</span>
+  <span class="s2">&quot;hotel&quot;</span>: <span class="o">{</span>
+    <span class="s2">&quot;hotelCode&quot;</span>: <span class="s2">&quot;d31d12&quot;</span>,
+    <span class="s2">&quot;hotelName&quot;</span>: <span class="s2">&quot;The Marmara Taksim&quot;</span>,
+    <span class="s2">&quot;destinationCode&quot;</span>: <span class="s2">&quot;c36ca9&quot;</span>,
+    <span class="s2">&quot;destinationName&quot;</span>: <span class="s2">&quot;istanbul&quot;</span>,
+    <span class="s2">&quot;countryCode&quot;</span>: <span class="s2">&quot;TR&quot;</span>,
+    <span class="s2">&quot;rates&quot;</span>: <span class="o">[</span>
+      <span class="o">{</span>
+        <span class="s2">&quot;rateType&quot;</span>: <span class="s2">&quot;NET&quot;</span>,
+        <span class="s2">&quot;rateKey&quot;</span>: <span class="s2">&quot;[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|5pyO3Q|[jVOYrg|2|0]]&quot;</span>,
+        <span class="s2">&quot;nonrefundable&quot;</span>: false,
+        <span class="s2">&quot;boardName&quot;</span>: <span class="s2">&quot;BED AND BREAKFAST&quot;</span>,
+        <span class="s2">&quot;rate&quot;</span>: <span class="m">591</span>.19,
+        <span class="s2">&quot;currency&quot;</span>: <span class="s2">&quot;EUR&quot;</span>,
+        <span class="s2">&quot;rooms&quot;</span>: <span class="o">[</span>
+          <span class="o">{</span>
+            <span class="s2">&quot;numberOfAdults&quot;</span>: <span class="m">2</span>,
+            <span class="s2">&quot;numberOfChildren&quot;</span>: <span class="m">0</span>,
+            <span class="s2">&quot;roomDescription&quot;</span>: <span class="s2">&quot;DOUBLE DELUXE CITY VIEW&quot;</span>,
+            <span class="s2">&quot;sequence&quot;</span>: <span class="m">1</span>
+          <span class="o">}</span>
+        <span class="o">]</span>,
+        <span class="s2">&quot;cancellationPolicies&quot;</span>: <span class="o">[</span>
+          <span class="o">{</span>
+            <span class="s2">&quot;amount&quot;</span>: <span class="m">175</span>.95,
+            <span class="s2">&quot;fromDate&quot;</span>: <span class="s2">&quot;2017-07-19T23:59:00+03:00&quot;</span>
+          <span class="o">}</span>
+        <span class="o">]</span>,
+        <span class="s2">&quot;remarks&quot;</span>: <span class="s2">&quot;CONTRACT VALID FOR JUNIOR ROOM TYPES .  Check-in hour 15:00 - .&quot;</span>,
+        <span class="s2">&quot;commission&quot;</span>: null,
+        <span class="s2">&quot;hotelCurrency&quot;</span>: null,
+        <span class="s2">&quot;hotelRate&quot;</span>: null
+      <span class="o">}</span>
+    <span class="o">]</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+<span class="err">&#39;</span>
+</pre></div>
+</td></tr></table>
                 
                   
                 
