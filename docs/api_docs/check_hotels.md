@@ -2,7 +2,19 @@
 
 ## Introduction
 
-You can perform an overall availability query for hotels by using either a destination or a list of selected hotels within the selected arrival and departure dates for a number of paxes.
+You can check for hotels available for the provided date and pax information by specifying either a destination code or a list of hotel codes.
+
+Because of higher amount of traffic coming to this step, most suppliers and Ratemarkt itself by nature serves the most of the availability information from cache storages.
+Serving from cache storages may cause outdated data being served and can be misleading for clients at the time of booking.
+So it is strongly recommended to use further availability resources such as [Check Hotel][1] and [Check Rate][2].
+
+!!! warning "Beware of Availability Errors"
+    This resource is the first and the only required step before performing any booking but it is not the preferable way of doing it because of higher probability of availability errors in the booking step.
+
+    We strongly recommend using [Check Hotel][1] and [Check Rate][2] resources for receiving the most recent availability and price information for hotels to prevent availability failures at the time of booking.
+
+[1]: /api_docs/check_hotel.md
+[2]: /api_docs/check_rate.md
 
 ### Definition
 
@@ -85,10 +97,10 @@ POST https://api.ratemarkt.com/v1/checkhotels
     </tbody>
 </table>
 
-!!! warning "About Optional* Arguments"
-    You should provide either one of `destinationCode` argument or `hotelCodes` argument to get your availability query work.
+!!! note "About Optional* Arguments"
+    You should provide either `destinationCode` or `hotelCodes` argument to get your availability query work.
 
-!!! danger "Beware Destination Based Queries"
+!!! warning "Beware of Destination Based Queries"
     Some popular travel destinations contain huge amount of hotels thus your queries may take much longer time then expected.
 
     We strongly recommend hotel list based queries so that you can perform your queries for only the hotels you interested in and get back corresponding results in much shorter times rather than receiving a bulk.

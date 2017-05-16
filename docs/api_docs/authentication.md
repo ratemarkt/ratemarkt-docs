@@ -7,8 +7,8 @@ In order to get authenticated against Ratemarkt API you should first request an 
 !!! tip "How to Obtain an API Key"
     Please see [Client Accounts][1] at [User's Guide][2] section on how to create a client account to generate API Key tied to that account.
 
-  [1]: users_guides/client_accounts/index.md
-  [2]: users_guides/getting_started.md
+[1]: users_guides/client_accounts/index.md
+[2]: users_guides/getting_started.md
 
 
 !!! warning "Secure you API Keys"
