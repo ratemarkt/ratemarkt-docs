@@ -31,14 +31,54 @@ In order to get autheticated against Ratemarkt API please see [Authentication](/
 
 ## Resources
 
-| Name                                          | Resource Url         | Description                                                                 |
-| --------------------------------------------- | -------------------- | --------------------------------------------------------------------------- |
-| [Check Hotels](/api_docs/check_hotels.md)     | `/v1/checkhotels`    | Get availabile hotels by using a destination id or multiple hotel ids.      |
-| [Check Hotel](/api_docs/check_hotel.md)       | `/v1/checkhotel`     | Single hotel availability for more recent data.                             |
-| [Check Rate](/api_docs/check_rate.md)         | `/v1/checkrate`      | Single rate availability with the most recent data.                         |
-| [Book Rate](/api_docs/book_rate.md)           | `/v1/bookrate`       | Make a booking from a selected rate by using its rate key.                  |
-| [Check Booking](/api_docs/check_booking.md)   | `/v1/checkbooking`   | Query the booking status using either booking reference or client reference.|
-| [Cancel Booking](/api_docs/cancel_booking.md) | `/v1/cancelbooking`  | Cancel refered booking when desired.                                        |
+All the API resources below accepts a JSON query object via HTTP post method for the sake of simplicity.
+
+<table>
+    <colgroup>
+        <col width="20%">
+        <col width="20%">
+        <col width="60%">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Resource Path</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="/api_docs/check_hotels/" >Check Hotels</a></td>
+            <td><code>/checkhotels</code></td>
+            <td>Get availabile hotels by using a destination id or a list of hotel codes.</td>
+        </tr>
+        <tr>
+            <td><a href="/api_docs/check_hotel/" >Check Hotel</a></td>
+            <td><code>/checkhotel</code></td>
+            <td>Single hotel availability for more recent data.</td>
+        </tr>
+        <tr>
+            <td><a href="/api_docs/check_rate" >Check Rate</a></td>
+            <td><code>/checkrate</code></td>
+            <td>Single rate availability with the most recent data.</td>
+        </tr>
+        <tr>
+            <td><a href="/api_docs/book_rate/" >Book Rate</a></td>
+            <td><code>/bookrate</code></td>
+            <td>Make a booking from a selected rate by using its rate key.</td>
+        </tr>
+        <tr>
+            <td><a href="/api_docs/check_booking/" >Check Booking</a></td>
+            <td><code>/checkbooking</code></td>
+            <td>Query the booking status using either booking reference or client reference.</td>
+        </tr>
+        <tr>
+            <td><a href="/api_docs/cancel_booking/" >Cancel Booking</a></td>
+            <td><code>/cancelbooking</code></td>
+            <td>Cancel refered booking when desired.</td>
+        </tr>
+    </tbody>
+</table>
 
 ## Errors
 
