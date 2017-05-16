@@ -712,7 +712,15 @@
                 
                 <h1 id="check-hotels">Check Hotels</h1>
 <h2 id="introduction">Introduction</h2>
-<p>You can perform an overall availability query for hotels by using either a destination or a list of selected hotels within the selected arrival and departure dates for a number of paxes.</p>
+<p>You can check for hotels available for the provided date and pax information by specifying either a destination code or a list of hotel codes.</p>
+<p>Because of higher amount of traffic coming to this step, most suppliers and Ratemarkt itself by nature serves the most of the availability information from cache storages.
+Serving from cache storages may cause outdated data being served and can be misleading for clients at the time of booking.
+So it is strongly recommended to use further availability resources such as <a href="../check_hotel/">Check Hotel</a> and <a href="../check_rate/">Check Rate</a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Beware of Availability Errors</p>
+<p>This resource is the first and the only required step before performing any booking but it is not the preferable way of doing it because of higher probability of availability errors in the booking step.</p>
+<p>We strongly recommend using <a href="../check_hotel/">Check Hotel</a> and <a href="../check_rate/">Check Rate</a> resources for receiving the most recent availability and price information for hotels to prevent availability failures at the time of booking.</p>
+</div>
 <h3 id="definition">Definition</h3>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>POST https://api.ratemarkt.com/v1/checkhotels
 </pre></div>
@@ -792,12 +800,12 @@
     </tbody>
 </table>
 
-<div class="admonition warning">
+<div class="admonition note">
 <p class="admonition-title">About Optional* Arguments</p>
-<p>You should provide either one of <code>destinationCode</code> argument or <code>hotelCodes</code> argument to get your availability query work.</p>
+<p>You should provide either <code>destinationCode</code> or <code>hotelCodes</code> argument to get your availability query work.</p>
 </div>
-<div class="admonition danger">
-<p class="admonition-title">Beware Destination Based Queries</p>
+<div class="admonition warning">
+<p class="admonition-title">Beware of Destination Based Queries</p>
 <p>Some popular travel destinations contain huge amount of hotels thus your queries may take much longer time then expected.</p>
 <p>We strongly recommend hotel list based queries so that you can perform your queries for only the hotels you interested in and get back corresponding results in much shorter times rather than receiving a bulk.</p>
 </div>
