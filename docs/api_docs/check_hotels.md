@@ -323,7 +323,7 @@ POST https://api.ratemarkt.com/v1/checkhotels
     </tbody>
 </table>
 
-## Example Result Object
+## Example Result Objects
 
 ### Single Room Result Object
 

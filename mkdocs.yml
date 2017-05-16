@@ -69,12 +69,12 @@ pages:
 - 'Api Docs':
     - 'Getting Started': 'api_docs/getting_started.md'
     - 'Authentication': 'api_docs/authentication.md'
-    - 'Check Hotels Endpoint': 'api_docs/check_hotels.md'
-    - 'Check Hotel Endpoint': 'api_docs/check_hotel.md'
-    - 'Check Rate Endpoint': 'api_docs/check_rate.md'
-    - 'Book Rate Endpoint': 'api_docs/book_rate.md'
-    - 'Check Booking Endpoint': 'api_docs/check_booking.md'
-    - 'Cancel Booking Endpoint': 'api_docs/cancel_booking.md'
+    - 'Check Hotels': 'api_docs/check_hotels.md'
+    - 'Check Hotel': 'api_docs/check_hotel.md'
+    - 'Check Rate': 'api_docs/check_rate.md'
+    - 'Book Rate': 'api_docs/book_rate.md'
+    - 'Check Booking': 'api_docs/check_booking.md'
+    - 'Cancel Booking': 'api_docs/cancel_booking.md'
     - 'Errors': 'api_docs/errors.md'
     - 'Client Libraries': 'api_docs/client_libraries.md'
 - 'SDK Docs':
