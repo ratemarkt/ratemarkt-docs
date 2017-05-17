@@ -36,9 +36,7 @@ POST https://api.ratemarkt.com/v1/checkhotel
     </tbody>
 </table>
 
-## Example Query Objects
-
-### Single room query for the specified hotel
+## Example Query Object
 
 ```json
 {
@@ -53,31 +51,6 @@ POST https://api.ratemarkt.com/v1/checkhotel
   ],
   "currency": "USD",
   "nationality": "US"
-}
-```
-
-### Multi room query for the specified hotel
-
-```json
-{
-    "checkin": "2017-07-22",
-    "checkout": "2017-07-25",
-    "currency": "USD",
-    "hotelCode": "d31d12",
-    "nationality": "US",
-    "paxes": [
-        {
-            "childrenAges": [],
-            "numberOfAdults": 1
-        },
-        {
-            "childrenAges": [
-                3,
-                5
-            ],
-            "numberOfAdults": 2
-        }
-    ]
 }
 ```
 
@@ -108,9 +81,7 @@ POST https://api.ratemarkt.com/v1/checkhotel
     </tbody>
 </table>
 
-## Example Result Objects
-
-### Single Room Result Object
+## Example Result Object
 
 ```json
 {

@@ -66,9 +66,7 @@ POST https://api.ratemarkt.com/v1/checkhotels
     We strongly recommend hotel list based queries so that you can perform your queries for only the hotels you interested in and get back corresponding results in much shorter times rather than retrieving a bulk.
 
 
-## Example Query Objects
-
-### Single room query for certain hotels
+## Example Query Object
 
 ```json
 {
@@ -82,31 +80,6 @@ POST https://api.ratemarkt.com/v1/checkhotels
   "paxes": [
     {
       "childrenAges": [],
-      "numberOfAdults": 2
-    }
-  ],
-  "currency": "USD",
-  "nationality": "US"
-}
-```
-
-### Multi room query for a certain destination
-
-```json
-{
-  "destinationCode": "d31d12",
-  "checkin": "2017-07-22",
-  "checkout": "2017-07-25",
-  "paxes": [
-    {
-      "childrenAges": [],
-      "numberOfAdults": 1
-    },
-    {
-      "childrenAges": [
-        3,
-        5
-      ],
       "numberOfAdults": 2
     }
   ],
@@ -143,9 +116,7 @@ POST https://api.ratemarkt.com/v1/checkhotels
     </tbody>
 </table>
 
-## Example Result Objects
-
-### Single Room Result Object
+## Example Result Object
 
 ```json
 {

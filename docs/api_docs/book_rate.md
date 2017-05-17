@@ -128,8 +128,6 @@ POST https://api.ratemarkt.com/v1/bookrate
 
 ## Example Query Object
 
-### Book a single room
-
 ```json
 {
   "rateKey": "[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|Prabrg|[jVOYrg|2|0]]",

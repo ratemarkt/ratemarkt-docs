@@ -74,9 +74,7 @@ POST https://api.ratemarkt.com/v1/checkrate
     </tbody>
 </table>
 
-## Example Result Objects
-
-### Single Room Result Object
+## Example Result Object
 
 !!!note "Holding Single Rate "
 
