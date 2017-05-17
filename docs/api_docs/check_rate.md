@@ -70,7 +70,7 @@ POST https://api.ratemarkt.com/v1/checkrate
         </tr>
     </thead>
     <tbody>
-        {! api_docs/_includes/hotel.md !}
+        {! api_docs/_includes/hotel_args.md !}
     </tbody>
 </table>
 

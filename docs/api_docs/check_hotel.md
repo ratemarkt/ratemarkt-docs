@@ -32,48 +32,7 @@ POST https://api.ratemarkt.com/v1/checkhotel
             <td>yes</td>
             <td>Unique hotel identifier</td>
         </tr>
-        <tr>
-            <td><code>checkin</code></td>
-            <td><code>string</code></td>
-            <td>yes</td>
-            <td><code>YYYY-MM-DD</code> (ISO 8601) formatted date string. Eg. 2017-11-12</td>
-        </tr>
-        <tr>
-            <td><code>checkout</code></td>
-            <td><code>string</code></td>
-            <td>yes</td>
-            <td><code>YYYY-MM-DD</code> (ISO 8601) formatted date string. Eg. 2017-11-15</td>
-        </tr>
-        <tr>
-            <td><code>paxes</code></td>
-            <td><code>list[Pax]</code></td>
-            <td>yes</td>
-            <td>List of pax objects. Each pax object corresponds to a room. Multi room queries need more than one pax object.</td>
-        </tr>
-        <tr>
-            <td><code>Pax.numberOfAdults</code></td>
-            <td><code>integer</code></td>
-            <td>yes</td>
-            <td>Number of adults for the specified room.</td>
-        </tr>
-        <tr>
-            <td><code>Pax.childrenAges</code></td>
-            <td><code>list[integer]</code></td>
-            <td>yes</td>
-            <td>List of children ages for the specified room.</td>
-        </tr>
-        <tr>
-            <td><code>currency</code></td>
-            <td><code>string</code></td>
-            <td>yes</td>
-            <td>Three letter currency code (ISO-4217). Only USD, EUR and GBP currencies are supported at the moment.</td>
-        </tr>
-        <tr>
-            <td><code>nationality</code></td>
-            <td><code>string</code></td>
-            <td>yes</td>
-            <td>Two letter country code (ISO 3166-1 alpha-2) for occupants passport nationality.</td>
-        </tr>
+        {! api_docs/_includes/availability_args.md !}
     </tbody>
 </table>
 
@@ -125,7 +84,7 @@ POST https://api.ratemarkt.com/v1/checkhotel
 ## Result Object
 
 !!!tip "Result Object Hint"
-    While [Check Hotels][1] resource returns a list of hotel objects, this resource returns a single hotel object using exactly the same attributes. So you may want to reuse the same json parser logic in your client application.
+    While [Check Hotels][1] resource returns a list of <code>Hotel</code> objects, this resource returns a single hotel object using exactly the same attributes. So you may want to reuse the same json parser logic in your client application.
 
 [1]: /api_docs/check_hotels.md
 
@@ -145,7 +104,7 @@ POST https://api.ratemarkt.com/v1/checkhotel
         </tr>
     </thead>
     <tbody>
-        {! api_docs/_includes/hotel.md !}
+        {! api_docs/_includes/hotel_args.md !}
     </tbody>
 </table>
 
