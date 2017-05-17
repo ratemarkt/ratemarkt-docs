@@ -307,13 +307,53 @@
         }, 
         {
             "location": "/api_docs/errors/", 
-            "text": "", 
+            "text": "Introduction\n\n\nRatemarkt API might raise errors in certain cases.\n\n\nIn order to distinguish different return types, Ratemarkt uses conventional HTTP status codes mapped to certain circumstances.\n\n\nAs the HTTP standard stated, all successful queries return HTTP status 20X with the desired result object in JSON format.\nFor any unsuccessful result, Ratemarkt again tries to map the error to the most relevant HTTP status with an explanatory \nError\n object in response body using JSON format.\n\n\nError Object\n\n\n\n    \n\n        \n\n        \n\n        \n\n        \n\n    \n\n    \n\n        \n\n            \nArgument\n\n            \nType\n\n            \nNullable\n\n            \nDescription\n\n        \n\n    \n\n    \n\n        \n\n            \nerrorCode\n\n            \ninteger\n\n            \nno\n\n            \nPredefined error code. Refer to error status reference.\n\n        \n\n        \n\n            \nerrorMessage\n\n            \nstring\n\n            \nno\n\n            \nExplanatory error description\n\n        \n\n        \n\n            \nerrorCode\n\n            \ninteger\n\n            \nyes\n\n            \nMore detailed information about the error if available.\n\n        \n\n    \n\n\n\n\n\nExample Error Object\n\n\n1\n2\n3\n4\n5\n6\n7\nHTTP\n1\n/\n1\n \n410\n \nGone\n\n\n\n{\n\n  \nerrorCode\n:\n \n41000\n,\n\n  \nmessage\n:\n \nNot available error\n,\n\n  \ndetail\n:\n \nRequested rate is no longer available\n\n\n}\n\n\n\n\n\n\n\nError Reference\n\n\n\n    \n\n        \n\n        \n\n        \n\n        \n\n    \n\n    \n\n        \n\n            \nHTTP Status Code\n\n            \nError Code\n\n            \nDescription\n\n            \nResolution\n\n        \n\n    \n\n    \n\n        \n\n            \n400\n\n            \n4000\n\n            \nValidation Error\n\n            \nCheck your query object and fix arguments if needed according to relevant \nQuery\n Object reference\n\n        \n\n        \n\n            \n401\n\n            \n40100\n\n            \nAuthentication Error\n\n            \nNo valid API key provided.\n\n        \n\n        \n\n            \n403\n\n            \n40300\n\n            \nAuthorization Error\n\n            \nYou're not permitted to access to the requested resource. Try with an authorized API key.\n\n        \n\n        \n\n            \n404\n\n            \n40400\n\n            \nNot Found Error\n\n            \nRequested resource does not exists. Check your API resource url.\n\n        \n\n        \n\n            \n409\n\n            \n40900\n\n            \nIllegal State Error\n\n            \nSome conflict occured. Please consult to detail message for further resolution.\n\n        \n\n        \n\n            \n410\n\n            \n41000\n\n            \nNot Available Error\n\n            \nRequested hotel or rate no more available. Try another one or change your date range or pax infromation.\n\n        \n\n        \n\n            \n429\n\n            \n42900\n\n            \nRate Limit Exceeded Error\n\n            \nYou have limited number of API access within a certain amount of time. Reduce your number of API access.\n\n        \n\n        \n\n            \n500\n\n            \n50000\n\n            \nSystem Error\n\n            \nConsult to detail message for further resolution.\n\n        \n\n        \n\n            \n500\n\n            \n51000\n\n            \nPayment Error\n\n            \nPayment could not be received. Try another payment option or provide another payment data.\n\n        \n\n        \n\n            \n503\n\n            \n50300\n\n            \nService Unavailable Error\n\n            \nUnknown system error occured. Consult to detail message for further resolution.", 
             "title": "Errors"
         }, 
         {
+            "location": "/api_docs/errors/#introduction", 
+            "text": "Ratemarkt API might raise errors in certain cases.  In order to distinguish different return types, Ratemarkt uses conventional HTTP status codes mapped to certain circumstances.  As the HTTP standard stated, all successful queries return HTTP status 20X with the desired result object in JSON format.\nFor any unsuccessful result, Ratemarkt again tries to map the error to the most relevant HTTP status with an explanatory  Error  object in response body using JSON format.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/api_docs/errors/#error-object", 
+            "text": "Argument \n             Type \n             Nullable \n             Description \n         \n     \n     \n         \n             errorCode \n             integer \n             no \n             Predefined error code. Refer to error status reference. \n         \n         \n             errorMessage \n             string \n             no \n             Explanatory error description \n         \n         \n             errorCode \n             integer \n             yes \n             More detailed information about the error if available.", 
+            "title": "Error Object"
+        }, 
+        {
+            "location": "/api_docs/errors/#example-error-object", 
+            "text": "1\n2\n3\n4\n5\n6\n7 HTTP 1 / 1   410   Gone  { \n   errorCode :   41000 , \n   message :   Not available error , \n   detail :   Requested rate is no longer available  }", 
+            "title": "Example Error Object"
+        }, 
+        {
+            "location": "/api_docs/errors/#error-reference", 
+            "text": "HTTP Status Code \n             Error Code \n             Description \n             Resolution \n         \n     \n     \n         \n             400 \n             4000 \n             Validation Error \n             Check your query object and fix arguments if needed according to relevant  Query  Object reference \n         \n         \n             401 \n             40100 \n             Authentication Error \n             No valid API key provided. \n         \n         \n             403 \n             40300 \n             Authorization Error \n             You're not permitted to access to the requested resource. Try with an authorized API key. \n         \n         \n             404 \n             40400 \n             Not Found Error \n             Requested resource does not exists. Check your API resource url. \n         \n         \n             409 \n             40900 \n             Illegal State Error \n             Some conflict occured. Please consult to detail message for further resolution. \n         \n         \n             410 \n             41000 \n             Not Available Error \n             Requested hotel or rate no more available. Try another one or change your date range or pax infromation. \n         \n         \n             429 \n             42900 \n             Rate Limit Exceeded Error \n             You have limited number of API access within a certain amount of time. Reduce your number of API access. \n         \n         \n             500 \n             50000 \n             System Error \n             Consult to detail message for further resolution. \n         \n         \n             500 \n             51000 \n             Payment Error \n             Payment could not be received. Try another payment option or provide another payment data. \n         \n         \n             503 \n             50300 \n             Service Unavailable Error \n             Unknown system error occured. Consult to detail message for further resolution.", 
+            "title": "Error Reference"
+        }, 
+        {
             "location": "/api_docs/client_libraries/", 
-            "text": "", 
+            "text": "Introduction\n\n\nWe have growing number of client libraries in different popular programming languages. Please find them below.\nAlso any contributions are very welcome and appricated so much.\n\n\nJava Client Library\n\n\nYou can use our Java SDK also as client library for Ratemarkt. Please see our \nSDK Documentation\n for detailed information.\n\n\n\n\n\n\n\n\nPython Client Library\n\n\n\n\n\n\n\n\nPhp Client Library", 
             "title": "Client Libraries"
+        }, 
+        {
+            "location": "/api_docs/client_libraries/#introduction", 
+            "text": "We have growing number of client libraries in different popular programming languages. Please find them below.\nAlso any contributions are very welcome and appricated so much.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/api_docs/client_libraries/#java-client-library", 
+            "text": "You can use our Java SDK also as client library for Ratemarkt. Please see our  SDK Documentation  for detailed information.", 
+            "title": "Java Client Library"
+        }, 
+        {
+            "location": "/api_docs/client_libraries/#python-client-library", 
+            "text": "", 
+            "title": "Python Client Library"
+        }, 
+        {
+            "location": "/api_docs/client_libraries/#php-client-library", 
+            "text": "", 
+            "title": "Php Client Library"
         }, 
         {
             "location": "/sdk_docs/getting_started/", 
