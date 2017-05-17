@@ -48,7 +48,7 @@ POST https://api.ratemarkt.com/v1/checkrate
 
 
 !!!tip "Result Object Hint"
-    While [Check Hotel][1] resource returns a hotel object, this resource also returns exactly the same hotel object except it holds only a single rate object in `rates` field.
+    While [Check Hotel][1] resource returns a `Hotel` object, this resource also returns exactly the same `Hotel` object except it holds only a single rate object in `rates` field.
 
     So you may want to reuse the same json parser logic in your client application.
 

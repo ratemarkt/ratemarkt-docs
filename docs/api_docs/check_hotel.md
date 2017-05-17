@@ -57,7 +57,9 @@ POST https://api.ratemarkt.com/v1/checkhotel
 ## Result Object
 
 !!!tip "Result Object Hint"
-    While [Check Hotels][1] resource returns a list of <code>Hotel</code> objects, this resource returns a single hotel object using exactly the same attributes. So you may want to reuse the same json parser logic in your client application.
+    While [Check Hotels][1] resource returns a list of `Hotel` objects, this resource also returns exactly the same `Hotel` object as a single item.
+
+    So you may want to reuse the same json parser logic in your client application.
 
 [1]: /api_docs/check_hotels.md
 
