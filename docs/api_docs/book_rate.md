@@ -126,34 +126,189 @@ POST https://api.ratemarkt.com/v1/bookrate
 
 ```json
 {
-    "clientRef": "172",
+  "rateKey": "[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|Prabrg|[jVOYrg|2|0]]",
+  "clientRef": "200",
+  "holder": {
+    "email": "johndoe@example.org",
+    "firstName": "john",
+    "lastName": "doe",
+    "phone": "+415050000000"
+  },
+  "occupancy": [
+    {
+      "room": {
+        "roomSequence": 1
+      },
+      "occupants": [
+        {
+          "firstName": "john",
+          "lastName": "doe",
+          "occupantType": "ADULT",
+          "age": 35
+        },
+        {
+          "firstName": "alice",
+          "lastName": "wonder",
+          "occupantType": "ADULT",
+          "age": 33
+        }
+      ]
+    }
+  ]
+}
+```
+
+## Result Object
+
+
+<table>
+    <colgroup>
+        <col width="20%">
+        <col width="20%">
+        <col width="20%">
+        <col width="40%">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Argument</th>
+            <th>Type</th>
+            <th>Nullable</th>
+            <th width="33%">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>status</code></td>
+            <td><code>string</code></td>
+            <td>no</td>
+            <td>
+                Flag indicating the current status of the booking. Available values are:
+                <ul>
+                    <li><code>IDLE</code>: Booking record created but not even processed.</li>
+                    <li><code>CONFIRMED</code>: Booking confirmed and payment processed successfully.</li>
+                    <li><code>FAILED</code>: Booking failed because of an error.</li>
+                    <li><code>CANCELED</code>: Booking cancelled successfully.</li>
+                    <li><code>CANCELLATION_FAILED</code>: Cancellation attempt failed because of an error.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><code>bookingRef</code></td>
+            <td><code>string</code></td>
+            <td>no</td>
+            <td>Unique booking identifier</td>
+        </tr>
+        <tr>
+            <td><code>clientRef</code></td>
+            <td><code>string</code></td>
+            <td>no</td>
+            <td>Unique booking identifier issued by the client</td>
+        </tr>
+        <tr>
+            <td><code>rateKey</code></td>
+            <td><code>string</code></td>
+            <td>no</td>
+            <td>Unique rate identifier</td>
+        </tr>
+    </tbody>
+</table>
+
+## Example Result Object
+
+```json
+{
+  "booking": {
+    "status": "CONFIRMED",
+    "bookingRef": "316591",
+    "clientRef": "qwerty123456",
+    "hotel": {
+      "hotelCode": "d31d12",
+      "hotelName": "The Marmara Taksim",
+      "destinationCode": "c36ca9",
+      "destinationName": "istanbul",
+      "countryCode": "TR",
+      "rates": [
+        {
+          "rateType": "NET",
+          "rateKey": "[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|Prabrg|[jVOYrg|2|0]]",
+          "nonrefundable": false,
+          "boardName": "ROOM ONLY",
+          "rate": 493.18,
+          "currency": "EUR",
+          "rooms": [
+            {
+              "numberOfAdults": 2,
+              "numberOfChildren": 0,
+              "roomDescription": "DOUBLE DELUXE CITY VIEW",
+              "sequence": 1
+            }
+          ],
+          "cancellationPolicies": [
+            {
+              "amount": 146.78,
+              "fromDate": "2017-07-19T23:59:00+03:00"
+            }
+          ],
+          "remarks": "CONTRACT VALID FOR JUNIOR ROOM TYPES .  Check-in hour 15:00 - .",
+          "commission": null,
+          "hotelCurrency": null,
+          "hotelRate": null
+        }
+      ]
+    },
+    "checkin": "2017-07-22",
+    "checkout": "2017-07-25",
+    "nationality": "us",
     "holder": {
-        "email": "eltonjohn@example.org",
-        "firstName": "mark",
-        "lastName": "john",
-        "phone": "+415050000000"
+      "firstName": "john",
+      "lastName": "doe",
+      "email": "johndoe@example.org",
+      "phone": "+415050000000"
     },
     "occupancy": [
-        {
-            "occupants": [
-                {
-                    "age": 35,
-                    "firstName": "mark",
-                    "lastName": "john",
-                    "occupantType": "ADULT"
-                },
-                {
-                    "age": 33,
-                    "firstName": "bob",
-                    "lastName": "larry",
-                    "occupantType": "ADULT"
-                }
-            ],
-            "room": {
-                "roomSequence": 1
-            }
+      {
+        "occupants": [
+          {
+            "occupantType": "ADULT",
+            "age": 35,
+            "firstName": "john",
+            "lastName": "doe"
+          },
+          {
+            "occupantType": "ADULT",
+            "age": 33,
+            "firstName": "alice",
+            "lastName": "wonder"
+          }
+        ],
+        "room": {
+          "numberOfAdults": 2,
+          "numberOfChildren": 0,
+          "roomDescription": "DOUBLE DELUXE CITY VIEW",
+          "sequence": 1
         }
+      }
     ],
-    "rateKey": "[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|Prabrg|[jVOYrg|2|0]]"
+    "creationDate": "2017-05-17T12:00:00Z",
+    "rateKey": "[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|Prabrg|[jVOYrg|2|0]]",
+    "rateType": "NET",
+    "boardName": "ROOM ONLY",
+    "nonrefundable": false,
+    "cancellationPolicies": [
+      {
+        "amount": 146.78,
+        "fromDate": "2017-07-19T23:59:00+03:00"
+      }
+    ],
+    "total": 493.18,
+    "currency": "EUR",
+    "balance": 440.34,
+    "cancellationCost": 0,
+    "commission": null,
+    "hotelRate": null,
+    "hotelCurrency": null,
+    "specialRequest": null,
+    "remarks": "Check-in hour 15:00 – . . CONTRACT VALID FOR JUNIOR ROOM TYPES"
+  }
 }
 ```

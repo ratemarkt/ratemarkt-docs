@@ -113,21 +113,21 @@ POST https://api.ratemarkt.com/v1/checkhotels
 
 ```json
 {
-    "hotelCodes": [
-        "d31d12",
-        "69af45",
-        "984767"
-    ],
-    "checkin": "2017-07-22",
-    "checkout": "2017-07-25",
-    "paxes": [
-        {
-            "childrenAges": [],
-            "numberOfAdults": 2
-        }
-    ],
-    "currency": "USD",
-    "nationality": "US"
+  "hotelCodes": [
+    "d31d12",
+    "69af45",
+    "984767"
+  ],
+  "checkin": "2017-07-22",
+  "checkout": "2017-07-25",
+  "paxes": [
+    {
+      "childrenAges": [],
+      "numberOfAdults": 2
+    }
+  ],
+  "currency": "USD",
+  "nationality": "US"
 }
 ```
 
@@ -135,24 +135,24 @@ POST https://api.ratemarkt.com/v1/checkhotels
 
 ```json
 {
-    "destinationCode": "d31d12",
-    "checkin": "2017-07-22",
-    "checkout": "2017-07-25",   
-    "paxes": [
-        {
-            "childrenAges": [],
-            "numberOfAdults": 1
-        },
-        {
-            "childrenAges": [
-                3,
-                5
-            ],
-            "numberOfAdults": 2
-        }
-    ],
-    "currency": "USD",
-    "nationality": "US"
+  "destinationCode": "d31d12",
+  "checkin": "2017-07-22",
+  "checkout": "2017-07-25",
+  "paxes": [
+    {
+      "childrenAges": [],
+      "numberOfAdults": 1
+    },
+    {
+      "childrenAges": [
+        3,
+        5
+      ],
+      "numberOfAdults": 2
+    }
+  ],
+  "currency": "USD",
+  "nationality": "US"
 }
 ```
 
@@ -190,94 +190,119 @@ POST https://api.ratemarkt.com/v1/checkhotels
 
 ```json
 {
-    "hotels": [
+  "hotels": [
+    {
+      "hotelCode": "69af45",
+      "hotelName": "The Marmara Pera",
+      "destinationCode": "c36ca9",
+      "destinationName": "istanbul",
+      "countryCode": "TR",
+      "rates": [
         {
-            "countryCode": "TR",
-            "destinationCode": "c36ca9",
-            "destinationName": "istanbul",
-            "hotelCode": "d31d12",
-            "hotelName": "The Marmara Taksim",
-            "rates": [
-                {
-                    "boardName": "ROOM ONLY",
-                    "cancellationPolicies": [
-                        {
-                            "amount": 146.78,
-                            "fromDate": "2017-07-19T23:59:00+03:00"
-                        }
-                    ],
-                    "commission": null,
-                    "currency": "EUR",
-                    "hotelCurrency": null,
-                    "hotelRate": null,
-                    "nonrefundable": false,
-                    "rate": 493.18,
-                    "rateKey": "[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|Prabrg|[jVOYrg|2|0]]",
-                    "rateType": "NET",
-                    "remarks": null,
-                    "rooms": [
-                        {
-                            "numberOfAdults": 2,
-                            "numberOfChildren": 0,
-                            "roomDescription": "DOUBLE DELUXE CITY VIEW",
-                            "sequence": 1
-                        }
-                    ]
-                },
-                {
-                    "boardName": "ROOM ONLY",
-                    "cancellationPolicies": [
-                        {
-                            "amount": 174.13,
-                            "fromDate": "2017-07-19T23:59:00+03:00"
-                        }
-                    ],
-                    "commission": null,
-                    "currency": "EUR",
-                    "hotelCurrency": null,
-                    "hotelRate": null,
-                    "nonrefundable": false,
-                    "rate": 585.08,
-                    "rateKey": "[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|Prabrg|[jVOYrg|2|0]]",
-                    "rateType": "NET",
-                    "remarks": null,
-                    "rooms": [
-                        {
-                            "numberOfAdults": 2,
-                            "numberOfChildren": 0,
-                            "roomDescription": "DOUBLE DELUXE CITY VIEW",
-                            "sequence": 1
-                        }
-                    ]
-                },
-                {
-                    "boardName": "BED AND BREAKFAST",
-                    "cancellationPolicies": [
-                        {
-                            "amount": 175.94,
-                            "fromDate": "2017-07-19T23:59:00+03:00"
-                        }
-                    ],
-                    "commission": null,
-                    "currency": "EUR",
-                    "hotelCurrency": null,
-                    "hotelRate": null,
-                    "nonrefundable": false,
-                    "rate": 591.19,
-                    "rateKey": "[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|5pyO3Q|[jVOYrg|2|0]]",
-                    "rateType": "NET",
-                    "remarks": null,
-                    "rooms": [
-                        {
-                            "numberOfAdults": 2,
-                            "numberOfChildren": 0,
-                            "roomDescription": "DOUBLE DELUXE CITY VIEW",
-                            "sequence": 1
-                        }
-                    ]
-                }
-            ]
+          "rateType": "NET",
+          "rateKey": "[Q9k|3|USD|US|[[2|[]]]]_[APS74Q|aa9F|NET|0|NWv9zw|[BugWBw|2|0]]",
+          "nonrefundable": true,
+          "boardName": "Room Only",
+          "rate": 165.83,
+          "currency": "USD",
+          "rooms": [
+            {
+              "numberOfAdults": 2,
+              "numberOfChildren": 0,
+              "roomDescription": "Superior",
+              "sequence": 1
+            }
+          ],
+          "cancellationPolicies": [],
+          "remarks": null,
+          "commission": null,
+          "hotelCurrency": null,
+          "hotelRate": null
+        },
+        {
+          "rateType": "NET",
+          "rateKey": "[Q9k|3|USD|US|[[2|[]]]]_[APS74Q|aa9F|NET|0|NWv9zw|[F108yA|2|0]]",
+          "nonrefundable": false,
+          "boardName": "Room Only",
+          "rate": 189.52,
+          "currency": "USD",
+          "rooms": [
+            {
+              "numberOfAdults": 2,
+              "numberOfChildren": 0,
+              "roomDescription": "Leisure Superior",
+              "sequence": 1
+            }
+          ],
+          "cancellationPolicies": [],
+          "remarks": null,
+          "commission": null,
+          "hotelCurrency": null,
+          "hotelRate": null
         }
-    ]
+      ]
+    },
+    {
+      "hotelCode": "d31d12",
+      "hotelName": "The Marmara Taksim",
+      "destinationCode": "c36ca9",
+      "destinationName": "istanbul",
+      "countryCode": "TR",
+      "rates": [
+        {
+          "rateType": "NET",
+          "rateKey": "[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|5pyO3Q|[jVOYrg|2|0]]",
+          "nonrefundable": false,
+          "boardName": "BED AND BREAKFAST",
+          "rate": 689.24,
+          "currency": "EUR",
+          "rooms": [
+            {
+              "numberOfAdults": 2,
+              "numberOfChildren": 0,
+              "roomDescription": "DOUBLE DELUXE CITY VIEW",
+              "sequence": 1
+            }
+          ],
+          "cancellationPolicies": [
+            {
+              "amount": 205.13,
+              "fromDate": "2017-07-19T23:59:00+03:00"
+            }
+          ],
+          "remarks": null,
+          "commission": null,
+          "hotelCurrency": null,
+          "hotelRate": null
+        },
+        {
+          "rateType": "NET",
+          "rateKey": "[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|Prabrg|[Jn1lQw|2|0]]",
+          "nonrefundable": false,
+          "boardName": "ROOM ONLY",
+          "rate": 676.97,
+          "currency": "EUR",
+          "rooms": [
+            {
+              "numberOfAdults": 2,
+              "numberOfChildren": 0,
+              "roomDescription": "DOUBLE DELUXE SEA VIEW",
+              "sequence": 1
+            }
+          ],
+          "cancellationPolicies": [
+            {
+              "amount": 201.48,
+              "fromDate": "2017-07-19T23:59:00+03:00"
+            }
+          ],
+          "remarks": null,
+          "commission": null,
+          "hotelCurrency": null,
+          "hotelRate": null
+        }
+      ]
+    }
+  ]
 }
 ```

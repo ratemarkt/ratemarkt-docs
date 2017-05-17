@@ -41,7 +41,7 @@ POST https://api.ratemarkt.com/v1/checkrate
 
 ```json
 {
-    "rateKey": "[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|Prabrg|[jVOYrg|2|0]]"
+  "rateKey": "[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|Prabrg|[jVOYrg|2|0]]"
 }
 ```
 ## Result Object
@@ -84,40 +84,40 @@ POST https://api.ratemarkt.com/v1/checkrate
 
 ```json
 {
-    "hotel": {
-        "countryCode": "TR",
-        "destinationCode": "c36ca9",
-        "destinationName": "istanbul",
-        "hotelCode": "d31d12",
-        "hotelName": "The Marmara Taksim",
-        "rates": [
-            {
-                "boardName": "ROOM ONLY",
-                "cancellationPolicies": [
-                    {
-                        "amount": 146.78,
-                        "fromDate": "2017-07-19T23:59:00+03:00"
-                    }
-                ],
-                "commission": null,
-                "currency": "EUR",
-                "hotelCurrency": null,
-                "hotelRate": null,
-                "nonrefundable": false,
-                "rate": 493.18,
-                "rateKey": "[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|Prabrg|[jVOYrg|2|0]]",
-                "rateType": "NET",
-                "remarks": null,
-                "rooms": [
-                    {
-                        "numberOfAdults": 2,
-                        "numberOfChildren": 0,
-                        "roomDescription": "DOUBLE DELUXE CITY VIEW",
-                        "sequence": 1
-                    }
-                ]
-            }
-        ]
-    }
+  "hotel": {
+    "hotelCode": "d31d12",
+    "hotelName": "The Marmara Taksim",
+    "destinationCode": "c36ca9",
+    "destinationName": "istanbul",
+    "countryCode": "TR",
+    "rates": [
+      {
+        "rateType": "NET",
+        "rateKey": "[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|5pyO3Q|[VaYabg|2|0]]",
+        "nonrefundable": false,
+        "boardName": "BED AND BREAKFAST",
+        "rate": 928.17,
+        "currency": "EUR",
+        "rooms": [
+          {
+            "numberOfAdults": 2,
+            "numberOfChildren": 0,
+            "roomDescription": "DOUBLE CLUB SEA VIEW",
+            "sequence": 1
+          }
+        ],
+        "cancellationPolicies": [
+          {
+            "amount": 276.24,
+            "fromDate": "2017-07-19T23:59:00+03:00"
+          }
+        ],
+        "remarks": "CONTRACT VALID FOR JUNIOR ROOM TYPES .  Check-in hour 15:00 - .",
+        "commission": null,
+        "hotelCurrency": null,
+        "hotelRate": null
+      }
+    ]
+  }
 }
 ```
