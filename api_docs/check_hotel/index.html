@@ -692,7 +692,7 @@
     <td><code>currency</code></td>
     <td><code>string</code></td>
     <td>yes</td>
-    <td>Three letter currency code (ISO-4217). Only USD, EUR and GBP currencies are supported at the moment.</td>
+    <td>Three letter currency code (ISO-4217). **Please read the regarding note below.**</td>
 </tr>
 <tr>
     <td><code>nationality</code></td>
@@ -703,6 +703,12 @@
     </tbody>
 </table>
 
+<div class="admonition warning">
+<p class="admonition-title">Please note the use of <code>currency</code> parameter</p>
+<p>Note that the <code>currency</code> parameter <strong>DOES NOT GUARANTEE</strong> the currency of rates returned by this resource.
+It only should be used to tell Ratemarkt to avoid unnecessary currency changes in the backyard and do its best to return in desired currency if available.</p>
+<p><strong>Please check each rate's individual currency in any case before proceeding to next steps.</strong></p>
+</div>
 <h2 id="example-query-object">Example Query Object</h2>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2

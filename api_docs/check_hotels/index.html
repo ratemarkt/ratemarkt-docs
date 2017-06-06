@@ -681,13 +681,13 @@ Serving from cache storages may cause outdated data being served and can be misl
             <td><code>destinationCode</code></td>
             <td><code>string</code></td>
             <td>optional*</td>
-            <td>Destination code.</td>
+            <td>Destination code. <i>Please note that destination based querying is prohibited and can only be enabled in case of special support inquiries because of the inefficient nature of this kind of queries. Please use hotel code based querying instead.</i></td>
         </tr>
         <tr>
             <td><code>hotelCodes</code></td>
             <td><code>list[string]</code></td>
             <td>optional*</td>
-            <td>List of hotel codes.</td>
+            <td>List of hotel codes. Up to max. 500 hotel codes per query is permitted.</td>
         </tr>
         <tr>
     <td><code>checkin</code></td>
@@ -723,7 +723,7 @@ Serving from cache storages may cause outdated data being served and can be misl
     <td><code>currency</code></td>
     <td><code>string</code></td>
     <td>yes</td>
-    <td>Three letter currency code (ISO-4217). Only USD, EUR and GBP currencies are supported at the moment.</td>
+    <td>Three letter currency code (ISO-4217). **Please read the regarding note below.**</td>
 </tr>
 <tr>
     <td><code>nationality</code></td>
@@ -737,6 +737,12 @@ Serving from cache storages may cause outdated data being served and can be misl
 <div class="admonition note">
 <p class="admonition-title">About Optional* Arguments</p>
 <p>You should provide either <code>destinationCode</code> or <code>hotelCodes</code> argument to get your availability query work.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Please note the use of <code>currency</code> parameter</p>
+<p>Note that the <code>currency</code> parameter <strong>DOES NOT GUARANTEE</strong> the currency of rates returned by this resource.
+It only should be used to tell Ratemarkt to avoid unnecessary currency changes in the backyard and do its best to return in desired currency if available.</p>
+<p><em>Please check each rate's individual currency in any case before proceeding to next steps.</em></p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Beware of Destination Based Queries</p>
