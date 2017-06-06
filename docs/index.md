@@ -15,7 +15,7 @@ Please choose the most suitable topic below you're looking for.
 * ~~[User's Guide](users_guide/getting_started.md) Find out more about how to use every feature of Ratemarkt.~~
 * [Api Docs](api_docs/getting_started.md) - Get integrated with Ratemarkt Client API.
 * ~~[SDK Docs](api_docs/getting_started.md) - Extend Ratemarkt Client API functionality using SDK.~~
-* ~~[API Specs](api_docs/getting_started.md) - Generic Supplier API Specs to take place as a Supplier in Ratemarkt~~
+* ~~[Supply Specs](api_docs/getting_started.md) - Generic Supplier API Specs to take place as a Supplier in Ratemarkt~~
 
 !!! warning "Ratemarkt Docs is under construction"
     Sorry for inconvenience but Ratemark Docs site is heavily under construction at the moment and many parts are still being prepared.

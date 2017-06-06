@@ -1,7 +1,7 @@
 ## Introduction
 
 We have growing number of client libraries in different popular programming languages. Please find them below.
-Also any contributions are very welcome and appricated so much.
+Also any contributions are very welcome and appreciated so much.
 
 ## Java Client Library
 

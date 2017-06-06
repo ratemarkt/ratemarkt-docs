@@ -32,7 +32,7 @@
     <td><code>currency</code></td>
     <td><code>string</code></td>
     <td>yes</td>
-    <td>Three letter currency code (ISO-4217). Only USD, EUR and GBP currencies are supported at the moment.</td>
+    <td>Three letter currency code (ISO-4217). **Please read the regarding note below.**</td>
 </tr>
 <tr>
     <td><code>nationality</code></td>

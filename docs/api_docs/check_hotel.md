@@ -36,6 +36,12 @@ POST https://api.ratemarkt.com/v1/checkhotel
     </tbody>
 </table>
 
+!!! warning "Please note the use of `currency` parameter"
+    Note that the `currency` parameter **DOES NOT GUARANTEE** the currency of rates returned by this resource.
+    It only should be used to tell Ratemarkt to avoid unnecessary currency changes in the backyard and do its best to return in desired currency if available.
+
+    **Please check each rate's individual currency in any case before proceeding to next steps.**
+
 ## Example Query Object
 
 ```json

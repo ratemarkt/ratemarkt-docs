@@ -45,13 +45,13 @@ POST https://api.ratemarkt.com/v1/checkhotels
             <td><code>destinationCode</code></td>
             <td><code>string</code></td>
             <td>optional*</td>
-            <td>Destination code.</td>
+            <td>Destination code. <i>Please note that destination based querying is prohibited and can only be enabled in case of special support inquiries because of the inefficient nature of this kind of queries. Please use hotel code based querying instead.</i></td>
         </tr>
         <tr>
             <td><code>hotelCodes</code></td>
             <td><code>list[string]</code></td>
             <td>optional*</td>
-            <td>List of hotel codes.</td>
+            <td>List of hotel codes. Up to max. 500 hotel codes per query is permitted.</td>
         </tr>
         {! api_docs/_includes/availability_args.md !}
     </tbody>
@@ -59,6 +59,13 @@ POST https://api.ratemarkt.com/v1/checkhotels
 
 !!! note "About Optional* Arguments"
     You should provide either `destinationCode` or `hotelCodes` argument to get your availability query work.
+
+!!! warning "Please note the use of `currency` parameter"
+    Note that the `currency` parameter **DOES NOT GUARANTEE** the currency of rates returned by this resource.
+    It only should be used to tell Ratemarkt to avoid unnecessary currency changes in the backyard and do its best to return in desired currency if available.
+
+    *Please check each rate's individual currency in any case before proceeding to next steps.*
+
 
 !!! warning "Beware of Destination Based Queries"
     Some popular travel destinations contain huge amount of hotels thus your queries may take much longer time then expected.
