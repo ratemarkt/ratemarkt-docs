@@ -1,7 +1,7 @@
 site_name: Ratemarkt Docs
 site_url: http://docs.ratemarkt.com
 site_description: 'Ratemartk Documentation and Knowledge Base Portal'
-site_author: 'Ratemarkt Ltd.'
+site_author: 'Ratemarkt, Inc..'
 
 theme: 'material'
 theme_dir: 'theme'
@@ -57,7 +57,7 @@ markdown_extensions:
 
 
 
-copyright: 'Copyright &copy; 2017 - 2018 Ratemarkt Ltd.'
+copyright: 'Copyright &copy; 2017 - 2018 Ratemarkt, Inc.'
 
 google_analytics:
   - 'UA-2040979-10'
