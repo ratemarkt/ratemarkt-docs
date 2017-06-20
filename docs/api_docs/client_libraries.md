@@ -7,16 +7,12 @@ Also any contributions are very welcome and appreciated so much.
 
 You can use our Java SDK also as client library for Ratemarkt. Please see our [SDK Documentation](/sdk_docs/getting_started.md) for detailed information.
 
-<div class="github-card" data-github="ratemarkt/ratemarkt-sdk" data-width="400" data-height="" data-theme="default"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-
+[https://github.com/ratemarkt/ratemarkt-sdk/](https://github.com/ratemarkt/ratemarkt-sdk/)
 
 ## Python Client Library
 
-<div class="github-card" data-github="ratemarkt/ratemarkt-python-client" data-width="400" data-height="" data-theme="default"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+[https://github.com/ratemarkt/ratemarkt-python-client/](https://github.com/ratemarkt/ratemarkt-python-client/)
 
 ## Php Client Library
 
-<div class="github-card" data-github="ratemarkt/ratemarkt-php-client" data-width="400" data-height="" data-theme="default"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+[https://github.com/ratemarkt/ratemarkt-php-client/](https://github.com/ratemarkt/ratemarkt-php-client/)
