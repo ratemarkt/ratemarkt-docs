@@ -332,7 +332,7 @@
         }, 
         {
             "location": "/api_docs/client_libraries/", 
-            "text": "Introduction\n\n\nWe have growing number of client libraries in different popular programming languages. Please find them below.\nAlso any contributions are very welcome and appreciated so much.\n\n\nJava Client Library\n\n\nYou can use our Java SDK also as client library for Ratemarkt. Please see our \nSDK Documentation\n for detailed information.\n\n\n\n\n\n\n\n\nPython Client Library\n\n\n\n\n\n\n\n\nPhp Client Library", 
+            "text": "Introduction\n\n\nWe have growing number of client libraries in different popular programming languages. Please find them below.\nAlso any contributions are very welcome and appreciated so much.\n\n\nJava Client Library\n\n\nYou can use our Java SDK also as client library for Ratemarkt. Please see our \nSDK Documentation\n for detailed information.\n\n\nhttps://github.com/ratemarkt/ratemarkt-sdk/\n\n\nPython Client Library\n\n\nhttps://github.com/ratemarkt/ratemarkt-python-client/\n\n\nPhp Client Library\n\n\nhttps://github.com/ratemarkt/ratemarkt-php-client/", 
             "title": "Client Libraries"
         }, 
         {
@@ -342,17 +342,17 @@
         }, 
         {
             "location": "/api_docs/client_libraries/#java-client-library", 
-            "text": "You can use our Java SDK also as client library for Ratemarkt. Please see our  SDK Documentation  for detailed information.", 
+            "text": "You can use our Java SDK also as client library for Ratemarkt. Please see our  SDK Documentation  for detailed information.  https://github.com/ratemarkt/ratemarkt-sdk/", 
             "title": "Java Client Library"
         }, 
         {
             "location": "/api_docs/client_libraries/#python-client-library", 
-            "text": "", 
+            "text": "https://github.com/ratemarkt/ratemarkt-python-client/", 
             "title": "Python Client Library"
         }, 
         {
             "location": "/api_docs/client_libraries/#php-client-library", 
-            "text": "", 
+            "text": "https://github.com/ratemarkt/ratemarkt-php-client/", 
             "title": "Php Client Library"
         }, 
         {
