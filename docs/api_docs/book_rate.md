@@ -118,6 +118,48 @@ POST https://api.ratemarkt.com/v1/bookrate
             <td>Room's sequence number. It is required for matching occupancy information with a room</td>
         </tr>
         <tr>
+            <td><code>creditCard</code></td>
+            <td><code>object[CreditCard]</code></td>
+            <td>no</td>
+            <td>Credit card information used for either for <code>DIRECT</code> type rates or online payment required rates.</td>
+        </tr>
+        <tr>
+            <td><code>CreditCard.firstName</code></td>
+            <td><code>string</code></td>
+            <td>yes</td>
+            <td>Card holder's first name</td>
+        </tr>
+        <tr>
+            <td><code>CreditCard.lastName</code></td>
+            <td><code>string</code></td>
+            <td>yes</td>
+            <td>Card holder's last name</td>
+        </tr>
+        <tr>
+            <td><code>CreditCard.number</code></td>
+            <td><code>string</code></td>
+            <td>yes</td>
+            <td>16 digit credit card number</td>
+        </tr>
+        <tr>
+            <td><code>CreditCard.year</code></td>
+            <td><code>string</code></td>
+            <td>yes</td>
+            <td>4 digit year identifier. E.g 2025</td>
+        </tr>
+        <tr>
+            <td><code>CreditCard.month</code></td>
+            <td><code>string</code></td>
+            <td>yes</td>
+            <td>2 digit year identifier. E.g 12</td>
+        </tr>
+        <tr>
+            <td><code>CreditCard.cvv</code></td>
+            <td><code>string</code></td>
+            <td>yes</td>
+            <td>Credit card verification number</td>
+        </tr>
+        <tr>
             <td><code>specialRequest</code></td>
             <td><code>string</code></td>
             <td>no</td>
@@ -137,6 +179,14 @@ POST https://api.ratemarkt.com/v1/bookrate
     "firstName": "john",
     "lastName": "doe",
     "phone": "+415050000000"
+  },
+  "creditCard": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "number": "4111111111111111",
+    "year": "2022",
+    "month": "12",
+    "cvv": "000"
   },
   "occupancy": [
     {
@@ -228,7 +278,8 @@ POST https://api.ratemarkt.com/v1/bookrate
     ],
     "creationDate": "2017-05-17T12:00:00Z",
     "rateType": "NET",
-    "boardName": "ROOM ONLY",
+    "boardType": "RO",
+    "boardName": "Room Only",
     "cancellationPolicies": [
       {
         "amount": 174.13,

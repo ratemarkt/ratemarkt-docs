@@ -227,10 +227,16 @@
     <td>Type of booked rate. Refer to <a href="/api_docs/check_rate/">Check Rate</a> documentation for further information.</td>
 </tr>
 <tr>
+    <td><code>Booking.boardType</code></td>
+    <td><code>string</code></td>
+    <td>no</td>
+    <td>Board type code of booked rate. Refer to <a href="/api_docs/check_rate/">Check Rate</a> documentation for further information.</td>
+</tr>
+<tr>
     <td><code>Booking.boardName</code></td>
     <td><code>string</code></td>
     <td>no</td>
-    <td>Boarding type of booked rate. Refer to <a href="/api_docs/check_rate/">Check Rate</a> documentation for further information.</td>
+    <td>Board type name of booked rate. Refer to <a href="/api_docs/check_rate/">Check Rate</a> documentation for further information.</td>
 </tr>
 <tr>
     <td><code>Booking.nonrefundable</code></td>

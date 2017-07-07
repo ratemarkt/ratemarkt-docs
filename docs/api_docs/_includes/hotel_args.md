@@ -63,10 +63,24 @@
     </td>
 </tr>
 <tr>
+    <td><code>Rate.boardType</code></td>
+    <td><code>string</code></td>
+    <td>no</td>
+    <td>Board type code of the rate. Possible value are<br/>
+        <ul>
+            <li><code>RO</code>: <span>Room Only</span></li>
+            <li><code>BB</code>: <span>Bed And Breakfast</span></li>
+            <li><code>HB</code>: <span>Half Board</span></li>
+            <li><code>FB</code>: <span>Full Board</span></li>
+            <li><code>AI</code>: <span>All Inclusive</span></li>
+        </ul>
+    </td>
+</tr>
+<tr>
     <td><code>Rate.boardName</code></td>
     <td><code>string</code></td>
     <td>no</td>
-    <td>Boarding type of the rate. It can be any arbitrary identifier depending on corresponding hotel's boarding policy.</td>
+    <td>Board type name of the rate. See <code>Rate.boardType</code> field for possible values.</td>
 </tr>
 <tr>
     <td><code>Rate.rate</code></td>
@@ -85,10 +99,7 @@
     <td><code>list[Room]</code></td>
     <td>no</td>
     <td>
-        List of <code>Room</code> objects.<br/><br/>
-        <strong>Please not that the number of rooms are not guaranteed to match the number of pax objects specified in <u>multi-pax</u> queries.</strong><br/><br/>
-        Some rates might return single room separately to conform the number of paxes specified in the query while some might return multi rooms per rate.<br/></br/>
-        <strong>If you choose separate rates for your multi pax query you should perform individual bookings for each of those rates separately.</strong>
+        List of <code>Room</code> objects.
     </td>
 </tr>
 <tr>

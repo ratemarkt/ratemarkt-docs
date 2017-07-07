@@ -128,7 +128,8 @@ POST https://api.ratemarkt.com/v1/cancelbooking
     ],
     "creationDate": "2017-05-17T12:00:00Z",
     "rateType": "NET",
-    "boardName": "ROOM ONLY",
+    "boardType": "RO",
+    "boardName": "Room Only",
     "cancellationPolicies": [
       {
         "amount": 174.13,

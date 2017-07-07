@@ -108,7 +108,8 @@ $ curl -X POST -H "Authorization: Bearer <YOUR_API_KEY_HERE>" https://api.ratema
         "rateType": "NET",
         "rateKey": "[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|5pyO3Q|[jVOYrg|2|0]]",
         "nonrefundable": false,
-        "boardName": "BED AND BREAKFAST",
+        "boardType": "RO",
+        "boardName": "Room Only",
         "rate": 591.19,
         "currency": "EUR",
         "rooms": [

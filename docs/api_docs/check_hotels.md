@@ -139,6 +139,7 @@ POST https://api.ratemarkt.com/v1/checkhotels
           "rateType": "NET",
           "rateKey": "[Q9k|3|USD|US|[[2|[]]]]_[APS74Q|aa9F|NET|0|NWv9zw|[BugWBw|2|0]]",
           "nonrefundable": true,
+          "boardType": "RO",
           "boardName": "Room Only",
           "rate": 165.83,
           "currency": "USD",
@@ -160,7 +161,8 @@ POST https://api.ratemarkt.com/v1/checkhotels
           "rateType": "NET",
           "rateKey": "[Q9k|3|USD|US|[[2|[]]]]_[APS74Q|aa9F|NET|0|NWv9zw|[F108yA|2|0]]",
           "nonrefundable": false,
-          "boardName": "Room Only",
+          "boardType": "BB",
+          "boardName": "Bed And Breakfast",
           "rate": 189.52,
           "currency": "USD",
           "rooms": [
@@ -190,7 +192,8 @@ POST https://api.ratemarkt.com/v1/checkhotels
           "rateType": "NET",
           "rateKey": "[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|5pyO3Q|[jVOYrg|2|0]]",
           "nonrefundable": false,
-          "boardName": "BED AND BREAKFAST",
+          "boardType": "BB",
+          "boardName": "Bed And Breakfast",
           "rate": 689.24,
           "currency": "EUR",
           "rooms": [
@@ -216,7 +219,8 @@ POST https://api.ratemarkt.com/v1/checkhotels
           "rateType": "NET",
           "rateKey": "[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|Prabrg|[Jn1lQw|2|0]]",
           "nonrefundable": false,
-          "boardName": "ROOM ONLY",
+          "boardType": "HB",
+          "boardName": "Half Board",
           "rate": 676.97,
           "currency": "EUR",
           "rooms": [
