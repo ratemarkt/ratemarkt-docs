@@ -758,10 +758,24 @@
     </td>
 </tr>
 <tr>
+    <td><code>Rate.boardType</code></td>
+    <td><code>string</code></td>
+    <td>no</td>
+    <td>Board type code of the rate. Possible value are<br/>
+        <ul>
+            <li><code>RO</code>: <span>Room Only</span></li>
+            <li><code>BB</code>: <span>Bed And Breakfast</span></li>
+            <li><code>HB</code>: <span>Half Board</span></li>
+            <li><code>FB</code>: <span>Full Board</span></li>
+            <li><code>AI</code>: <span>All Inclusive</span></li>
+        </ul>
+    </td>
+</tr>
+<tr>
     <td><code>Rate.boardName</code></td>
     <td><code>string</code></td>
     <td>no</td>
-    <td>Boarding type of the rate. It can be any arbitrary identifier depending on corresponding hotel's boarding policy.</td>
+    <td>Board type name of the rate. See <code>Rate.boardType</code> field for possible values.</td>
 </tr>
 <tr>
     <td><code>Rate.rate</code></td>
@@ -780,10 +794,7 @@
     <td><code>list[Room]</code></td>
     <td>no</td>
     <td>
-        List of <code>Room</code> objects.<br/><br/>
-        <strong>Please not that the number of rooms are not guaranteed to match the number of pax objects specified in <u>multi-pax</u> queries.</strong><br/><br/>
-        Some rates might return single room separately to conform the number of paxes specified in the query while some might return multi rooms per rate.<br/></br/>
-        <strong>If you choose separate rates for your multi pax query you should perform individual bookings for each of those rates separately.</strong>
+        List of <code>Room</code> objects.
     </td>
 </tr>
 <tr>
@@ -902,7 +913,8 @@
 34
 35
 36
-37</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">{</span>
+37
+38</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">{</span>
   <span class="nt">&quot;hotel&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;hotelCode&quot;</span><span class="p">:</span> <span class="s2">&quot;d31d12&quot;</span><span class="p">,</span>
     <span class="nt">&quot;hotelName&quot;</span><span class="p">:</span> <span class="s2">&quot;The Marmara Taksim&quot;</span><span class="p">,</span>
@@ -914,7 +926,8 @@
         <span class="nt">&quot;rateType&quot;</span><span class="p">:</span> <span class="s2">&quot;NET&quot;</span><span class="p">,</span>
         <span class="nt">&quot;rateKey&quot;</span><span class="p">:</span> <span class="s2">&quot;[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|5pyO3Q|[VaYabg|2|0]]&quot;</span><span class="p">,</span>
         <span class="nt">&quot;nonrefundable&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-        <span class="nt">&quot;boardName&quot;</span><span class="p">:</span> <span class="s2">&quot;BED AND BREAKFAST&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;boardType&quot;</span><span class="p">:</span> <span class="s2">&quot;RO&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;boardName&quot;</span><span class="p">:</span> <span class="s2">&quot;Room Only&quot;</span><span class="p">,</span>
         <span class="nt">&quot;rate&quot;</span><span class="p">:</span> <span class="mf">928.17</span><span class="p">,</span>
         <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;EUR&quot;</span><span class="p">,</span>
         <span class="nt">&quot;rooms&quot;</span><span class="p">:</span> <span class="p">[</span>

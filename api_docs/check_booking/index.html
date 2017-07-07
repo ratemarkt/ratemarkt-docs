@@ -932,10 +932,16 @@ You might want to use this resource to gather all the information about your boo
     <td>Type of booked rate. Refer to <a href="/api_docs/check_rate/">Check Rate</a> documentation for further information.</td>
 </tr>
 <tr>
+    <td><code>Booking.boardType</code></td>
+    <td><code>string</code></td>
+    <td>no</td>
+    <td>Board type code of booked rate. Refer to <a href="/api_docs/check_rate/">Check Rate</a> documentation for further information.</td>
+</tr>
+<tr>
     <td><code>Booking.boardName</code></td>
     <td><code>string</code></td>
     <td>no</td>
-    <td>Boarding type of booked rate. Refer to <a href="/api_docs/check_rate/">Check Rate</a> documentation for further information.</td>
+    <td>Board type name of booked rate. Refer to <a href="/api_docs/check_rate/">Check Rate</a> documentation for further information.</td>
 </tr>
 <tr>
     <td><code>Booking.nonrefundable</code></td>
@@ -1040,7 +1046,8 @@ You might want to use this resource to gather all the information about your boo
 61
 62
 63
-64</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">{</span>
+64
+65</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">{</span>
   <span class="nt">&quot;booking&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;CONFIRMED&quot;</span><span class="p">,</span>
     <span class="nt">&quot;bookingRef&quot;</span><span class="p">:</span> <span class="s2">&quot;55cda9&quot;</span><span class="p">,</span>
@@ -1080,7 +1087,8 @@ You might want to use this resource to gather all the information about your boo
     <span class="p">],</span>
     <span class="nt">&quot;creationDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-05-17T12:00:00Z&quot;</span><span class="p">,</span>
     <span class="nt">&quot;rateType&quot;</span><span class="p">:</span> <span class="s2">&quot;NET&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;boardName&quot;</span><span class="p">:</span> <span class="s2">&quot;ROOM ONLY&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;boardType&quot;</span><span class="p">:</span> <span class="s2">&quot;RO&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;boardName&quot;</span><span class="p">:</span> <span class="s2">&quot;Room Only&quot;</span><span class="p">,</span>
     <span class="nt">&quot;cancellationPolicies&quot;</span><span class="p">:</span> <span class="p">[</span>
       <span class="p">{</span>
         <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mf">174.13</span><span class="p">,</span>

@@ -744,6 +744,48 @@
             <td>Room's sequence number. It is required for matching occupancy information with a room</td>
         </tr>
         <tr>
+            <td><code>creditCard</code></td>
+            <td><code>object[CreditCard]</code></td>
+            <td>no</td>
+            <td>Credit card information used for either for <code>DIRECT</code> type rates or online payment required rates.</td>
+        </tr>
+        <tr>
+            <td><code>CreditCard.firstName</code></td>
+            <td><code>string</code></td>
+            <td>yes</td>
+            <td>Card holder's first name</td>
+        </tr>
+        <tr>
+            <td><code>CreditCard.lastName</code></td>
+            <td><code>string</code></td>
+            <td>yes</td>
+            <td>Card holder's last name</td>
+        </tr>
+        <tr>
+            <td><code>CreditCard.number</code></td>
+            <td><code>string</code></td>
+            <td>yes</td>
+            <td>16 digit credit card number</td>
+        </tr>
+        <tr>
+            <td><code>CreditCard.year</code></td>
+            <td><code>string</code></td>
+            <td>yes</td>
+            <td>4 digit year identifier. E.g 2025</td>
+        </tr>
+        <tr>
+            <td><code>CreditCard.month</code></td>
+            <td><code>string</code></td>
+            <td>yes</td>
+            <td>2 digit year identifier. E.g 12</td>
+        </tr>
+        <tr>
+            <td><code>CreditCard.cvv</code></td>
+            <td><code>string</code></td>
+            <td>yes</td>
+            <td>Credit card verification number</td>
+        </tr>
+        <tr>
             <td><code>specialRequest</code></td>
             <td><code>string</code></td>
             <td>no</td>
@@ -783,7 +825,15 @@
 28
 29
 30
-31</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">{</span>
+31
+32
+33
+34
+35
+36
+37
+38
+39</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">{</span>
   <span class="nt">&quot;rateKey&quot;</span><span class="p">:</span> <span class="s2">&quot;[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|Prabrg|[jVOYrg|2|0]]&quot;</span><span class="p">,</span>
   <span class="nt">&quot;clientRef&quot;</span><span class="p">:</span> <span class="s2">&quot;qwerty123456&quot;</span><span class="p">,</span>
   <span class="nt">&quot;holder&quot;</span><span class="p">:</span> <span class="p">{</span>
@@ -791,6 +841,14 @@
     <span class="nt">&quot;firstName&quot;</span><span class="p">:</span> <span class="s2">&quot;john&quot;</span><span class="p">,</span>
     <span class="nt">&quot;lastName&quot;</span><span class="p">:</span> <span class="s2">&quot;doe&quot;</span><span class="p">,</span>
     <span class="nt">&quot;phone&quot;</span><span class="p">:</span> <span class="s2">&quot;+415050000000&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;creditCard&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;firstName&quot;</span><span class="p">:</span> <span class="s2">&quot;John&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;lastName&quot;</span><span class="p">:</span> <span class="s2">&quot;Doe&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;number&quot;</span><span class="p">:</span> <span class="s2">&quot;4111111111111111&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;year&quot;</span><span class="p">:</span> <span class="s2">&quot;2022&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;month&quot;</span><span class="p">:</span> <span class="s2">&quot;12&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;cvv&quot;</span><span class="p">:</span> <span class="s2">&quot;000&quot;</span>
   <span class="p">},</span>
   <span class="nt">&quot;occupancy&quot;</span><span class="p">:</span> <span class="p">[</span>
     <span class="p">{</span>
@@ -1063,10 +1121,16 @@
     <td>Type of booked rate. Refer to <a href="/api_docs/check_rate/">Check Rate</a> documentation for further information.</td>
 </tr>
 <tr>
+    <td><code>Booking.boardType</code></td>
+    <td><code>string</code></td>
+    <td>no</td>
+    <td>Board type code of booked rate. Refer to <a href="/api_docs/check_rate/">Check Rate</a> documentation for further information.</td>
+</tr>
+<tr>
     <td><code>Booking.boardName</code></td>
     <td><code>string</code></td>
     <td>no</td>
-    <td>Boarding type of booked rate. Refer to <a href="/api_docs/check_rate/">Check Rate</a> documentation for further information.</td>
+    <td>Board type name of booked rate. Refer to <a href="/api_docs/check_rate/">Check Rate</a> documentation for further information.</td>
 </tr>
 <tr>
     <td><code>Booking.nonrefundable</code></td>
@@ -1171,7 +1235,8 @@
 61
 62
 63
-64</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">{</span>
+64
+65</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">{</span>
   <span class="nt">&quot;booking&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;CONFIRMED&quot;</span><span class="p">,</span>
     <span class="nt">&quot;bookingRef&quot;</span><span class="p">:</span> <span class="s2">&quot;55cda9&quot;</span><span class="p">,</span>
@@ -1211,7 +1276,8 @@
     <span class="p">],</span>
     <span class="nt">&quot;creationDate&quot;</span><span class="p">:</span> <span class="s2">&quot;2017-05-17T12:00:00Z&quot;</span><span class="p">,</span>
     <span class="nt">&quot;rateType&quot;</span><span class="p">:</span> <span class="s2">&quot;NET&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;boardName&quot;</span><span class="p">:</span> <span class="s2">&quot;ROOM ONLY&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;boardType&quot;</span><span class="p">:</span> <span class="s2">&quot;RO&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;boardName&quot;</span><span class="p">:</span> <span class="s2">&quot;Room Only&quot;</span><span class="p">,</span>
     <span class="nt">&quot;cancellationPolicies&quot;</span><span class="p">:</span> <span class="p">[</span>
       <span class="p">{</span>
         <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mf">174.13</span><span class="p">,</span>

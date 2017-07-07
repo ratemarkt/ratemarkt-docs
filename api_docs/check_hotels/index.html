@@ -874,10 +874,24 @@ It only should be used to tell Ratemarkt to avoid unnecessary currency changes i
     </td>
 </tr>
 <tr>
+    <td><code>Rate.boardType</code></td>
+    <td><code>string</code></td>
+    <td>no</td>
+    <td>Board type code of the rate. Possible value are<br/>
+        <ul>
+            <li><code>RO</code>: <span>Room Only</span></li>
+            <li><code>BB</code>: <span>Bed And Breakfast</span></li>
+            <li><code>HB</code>: <span>Half Board</span></li>
+            <li><code>FB</code>: <span>Full Board</span></li>
+            <li><code>AI</code>: <span>All Inclusive</span></li>
+        </ul>
+    </td>
+</tr>
+<tr>
     <td><code>Rate.boardName</code></td>
     <td><code>string</code></td>
     <td>no</td>
-    <td>Boarding type of the rate. It can be any arbitrary identifier depending on corresponding hotel's boarding policy.</td>
+    <td>Board type name of the rate. See <code>Rate.boardType</code> field for possible values.</td>
 </tr>
 <tr>
     <td><code>Rate.rate</code></td>
@@ -896,10 +910,7 @@ It only should be used to tell Ratemarkt to avoid unnecessary currency changes i
     <td><code>list[Room]</code></td>
     <td>no</td>
     <td>
-        List of <code>Room</code> objects.<br/><br/>
-        <strong>Please not that the number of rooms are not guaranteed to match the number of pax objects specified in <u>multi-pax</u> queries.</strong><br/><br/>
-        Some rates might return single room separately to conform the number of paxes specified in the query while some might return multi rooms per rate.<br/></br/>
-        <strong>If you choose separate rates for your multi pax query you should perform individual bookings for each of those rates separately.</strong>
+        List of <code>Room</code> objects.
     </td>
 </tr>
 <tr>
@@ -1093,7 +1104,11 @@ It only should be used to tell Ratemarkt to avoid unnecessary currency changes i
 113
 114
 115
-116</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">{</span>
+116
+117
+118
+119
+120</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">{</span>
   <span class="nt">&quot;hotels&quot;</span><span class="p">:</span> <span class="p">[</span>
     <span class="p">{</span>
       <span class="nt">&quot;hotelCode&quot;</span><span class="p">:</span> <span class="s2">&quot;69af45&quot;</span><span class="p">,</span>
@@ -1106,6 +1121,7 @@ It only should be used to tell Ratemarkt to avoid unnecessary currency changes i
           <span class="nt">&quot;rateType&quot;</span><span class="p">:</span> <span class="s2">&quot;NET&quot;</span><span class="p">,</span>
           <span class="nt">&quot;rateKey&quot;</span><span class="p">:</span> <span class="s2">&quot;[Q9k|3|USD|US|[[2|[]]]]_[APS74Q|aa9F|NET|0|NWv9zw|[BugWBw|2|0]]&quot;</span><span class="p">,</span>
           <span class="nt">&quot;nonrefundable&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+          <span class="nt">&quot;boardType&quot;</span><span class="p">:</span> <span class="s2">&quot;RO&quot;</span><span class="p">,</span>
           <span class="nt">&quot;boardName&quot;</span><span class="p">:</span> <span class="s2">&quot;Room Only&quot;</span><span class="p">,</span>
           <span class="nt">&quot;rate&quot;</span><span class="p">:</span> <span class="mf">165.83</span><span class="p">,</span>
           <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;USD&quot;</span><span class="p">,</span>
@@ -1127,7 +1143,8 @@ It only should be used to tell Ratemarkt to avoid unnecessary currency changes i
           <span class="nt">&quot;rateType&quot;</span><span class="p">:</span> <span class="s2">&quot;NET&quot;</span><span class="p">,</span>
           <span class="nt">&quot;rateKey&quot;</span><span class="p">:</span> <span class="s2">&quot;[Q9k|3|USD|US|[[2|[]]]]_[APS74Q|aa9F|NET|0|NWv9zw|[F108yA|2|0]]&quot;</span><span class="p">,</span>
           <span class="nt">&quot;nonrefundable&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-          <span class="nt">&quot;boardName&quot;</span><span class="p">:</span> <span class="s2">&quot;Room Only&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;boardType&quot;</span><span class="p">:</span> <span class="s2">&quot;BB&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;boardName&quot;</span><span class="p">:</span> <span class="s2">&quot;Bed And Breakfast&quot;</span><span class="p">,</span>
           <span class="nt">&quot;rate&quot;</span><span class="p">:</span> <span class="mf">189.52</span><span class="p">,</span>
           <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;USD&quot;</span><span class="p">,</span>
           <span class="nt">&quot;rooms&quot;</span><span class="p">:</span> <span class="p">[</span>
@@ -1157,7 +1174,8 @@ It only should be used to tell Ratemarkt to avoid unnecessary currency changes i
           <span class="nt">&quot;rateType&quot;</span><span class="p">:</span> <span class="s2">&quot;NET&quot;</span><span class="p">,</span>
           <span class="nt">&quot;rateKey&quot;</span><span class="p">:</span> <span class="s2">&quot;[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|5pyO3Q|[jVOYrg|2|0]]&quot;</span><span class="p">,</span>
           <span class="nt">&quot;nonrefundable&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-          <span class="nt">&quot;boardName&quot;</span><span class="p">:</span> <span class="s2">&quot;BED AND BREAKFAST&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;boardType&quot;</span><span class="p">:</span> <span class="s2">&quot;BB&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;boardName&quot;</span><span class="p">:</span> <span class="s2">&quot;Bed And Breakfast&quot;</span><span class="p">,</span>
           <span class="nt">&quot;rate&quot;</span><span class="p">:</span> <span class="mf">689.24</span><span class="p">,</span>
           <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;EUR&quot;</span><span class="p">,</span>
           <span class="nt">&quot;rooms&quot;</span><span class="p">:</span> <span class="p">[</span>
@@ -1183,7 +1201,8 @@ It only should be used to tell Ratemarkt to avoid unnecessary currency changes i
           <span class="nt">&quot;rateType&quot;</span><span class="p">:</span> <span class="s2">&quot;NET&quot;</span><span class="p">,</span>
           <span class="nt">&quot;rateKey&quot;</span><span class="p">:</span> <span class="s2">&quot;[Q9k|3|USD|US|[[2|[]]]]_[AJ62Fw|ANMdEg|NET|0|Prabrg|[Jn1lQw|2|0]]&quot;</span><span class="p">,</span>
           <span class="nt">&quot;nonrefundable&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
-          <span class="nt">&quot;boardName&quot;</span><span class="p">:</span> <span class="s2">&quot;ROOM ONLY&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;boardType&quot;</span><span class="p">:</span> <span class="s2">&quot;HB&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;boardName&quot;</span><span class="p">:</span> <span class="s2">&quot;Half Board&quot;</span><span class="p">,</span>
           <span class="nt">&quot;rate&quot;</span><span class="p">:</span> <span class="mf">676.97</span><span class="p">,</span>
           <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;EUR&quot;</span><span class="p">,</span>
           <span class="nt">&quot;rooms&quot;</span><span class="p">:</span> <span class="p">[</span>
