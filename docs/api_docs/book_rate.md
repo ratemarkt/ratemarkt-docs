@@ -112,7 +112,7 @@ POST https://api.ratemarkt.com/v1/bookrate
             <td>Room object containing the only value of its sequence number</td>
         </tr>
         <tr>
-            <td><code>Room.roomSequence</code></td>
+            <td><code>Room.sequence</code></td>
             <td><code>integer</code></td>
             <td>yes</td>
             <td>Room's sequence number. It is required for matching occupancy information with a room</td>
@@ -191,7 +191,7 @@ POST https://api.ratemarkt.com/v1/bookrate
   "occupancy": [
     {
       "room": {
-        "roomSequence": 1
+        "sequence": 1
       },
       "occupants": [
         {
