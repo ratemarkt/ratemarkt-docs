@@ -891,10 +891,11 @@ It only should be used to tell Ratemarkt to avoid unnecessary currency changes i
 <tr>
     <td><code>Rate.cancellationPolicies</code></td>
     <td><code>list[CancellationPolicy]</code></td>
-    <td>no</td>
+    <td>yes</td>
     <td>
         List of <code>CancellationPolicy</code> objects.<br/><br/>
-        Cancellation policies indicates the amount of penalty charged and deducted from the total refund amount of the booking at the time of cancellation performed after the specified date and time.
+        Cancellation policies indicates the amount of penalty charged and deducted from the total refund amount of the booking at the time of cancellation performed after the specified date and time.<br/><br/>
+        Please note that, the value can be <code>null</code> since not all the suppliers provide this data on <code>Check Hotels</code> step. In these cases, you should use <code>Check Rate</code> end point accordingly to able to retrieve cancellation policies.
     </td>
 </tr>
 <tr>
