@@ -117,7 +117,7 @@ POST https://api.ratemarkt.com/v1/checkbooking
         ],
         "room": {
           "numberOfAdults": 2,
-          "numberOfChildren": 0,
+          "childrenAges": [],
           "roomDescription": "DOUBLE DELUXE CITY VIEW",
           "sequence": 1
         }

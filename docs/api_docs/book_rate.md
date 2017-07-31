@@ -270,7 +270,7 @@ POST https://api.ratemarkt.com/v1/bookrate
         ],
         "room": {
           "numberOfAdults": 2,
-          "numberOfChildren": 0,
+          "childrenAges": [],
           "roomDescription": "DOUBLE DELUXE CITY VIEW",
           "sequence": 1
         }

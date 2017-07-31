@@ -100,7 +100,7 @@ POST https://api.ratemarkt.com/v1/checkrate
         "rooms": [
           {
             "numberOfAdults": 2,
-            "numberOfChildren": 0,
+            "childrenAges": [],
             "roomDescription": "DOUBLE CLUB SEA VIEW",
             "sequence": 1
           }

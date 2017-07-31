@@ -111,7 +111,7 @@ POST https://api.ratemarkt.com/v1/checkhotel
         "rooms": [
           {
             "numberOfAdults": 2,
-            "numberOfChildren": 0,
+            "childrenAges": [],
             "roomDescription": "DOUBLE CORNER CITY VIEW",
             "sequence": 1
           }
@@ -138,7 +138,7 @@ POST https://api.ratemarkt.com/v1/checkhotel
         "rooms": [
           {
             "numberOfAdults": 2,
-            "numberOfChildren": 0,
+            "childrenAges": [],
             "roomDescription": "DOUBLE CORNER CITY VIEW",
             "sequence": 1
           }

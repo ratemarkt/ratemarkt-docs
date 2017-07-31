@@ -115,7 +115,7 @@ $ curl -X POST -H "Authorization: Bearer <YOUR_API_KEY_HERE>" https://api.ratema
         "rooms": [
           {
             "numberOfAdults": 2,
-            "numberOfChildren": 0,
+            "childrenAges": [],
             "roomDescription": "DOUBLE DELUXE CITY VIEW",
             "sequence": 1
           }

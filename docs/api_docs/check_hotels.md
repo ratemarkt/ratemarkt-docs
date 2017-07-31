@@ -146,7 +146,7 @@ POST https://api.ratemarkt.com/v1/checkhotels
           "rooms": [
             {
               "numberOfAdults": 2,
-              "numberOfChildren": 0,
+              "childrenAges": [],
               "roomDescription": "Superior",
               "sequence": 1
             }
@@ -168,7 +168,7 @@ POST https://api.ratemarkt.com/v1/checkhotels
           "rooms": [
             {
               "numberOfAdults": 2,
-              "numberOfChildren": 0,
+              "childrenAges": [],
               "roomDescription": "Leisure Superior",
               "sequence": 1
             }
@@ -199,7 +199,7 @@ POST https://api.ratemarkt.com/v1/checkhotels
           "rooms": [
             {
               "numberOfAdults": 2,
-              "numberOfChildren": 0,
+              "childrenAges": [],
               "roomDescription": "DOUBLE DELUXE CITY VIEW",
               "sequence": 1
             }
@@ -226,7 +226,7 @@ POST https://api.ratemarkt.com/v1/checkhotels
           "rooms": [
             {
               "numberOfAdults": 2,
-              "numberOfChildren": 0,
+              "childrenAges": [],
               "roomDescription": "DOUBLE DELUXE SEA VIEW",
               "sequence": 1
             }
