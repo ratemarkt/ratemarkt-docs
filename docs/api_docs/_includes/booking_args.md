@@ -1,10 +1,4 @@
 <tr>
-    <td><code>Result.booking</code></td>
-    <td><code>object[Booking]</code></td>
-    <td>no</td>
-    <td>Booking object</td>
-</tr>
-<tr>
     <td><code>Booking.status</code></td>
     <td><code>string</code></td>
     <td>no</td>

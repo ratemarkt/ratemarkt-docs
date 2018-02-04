@@ -73,6 +73,11 @@ All the API resources below accepts a JSON query object via HTTP post method for
             <td>Query the booking status using either booking reference or client reference.</td>
         </tr>
         <tr>
+            <td><a href="/api_docs/check_bookings/" >Check Bookings</a></td>
+            <td><code>/checkbookings</code></td>
+            <td>List bookings between two dates</td>
+        </tr>
+        <tr>
             <td><a href="/api_docs/cancel_booking/" >Cancel Booking</a></td>
             <td><code>/cancelbooking</code></td>
             <td>Cancel refered booking when desired.</td>

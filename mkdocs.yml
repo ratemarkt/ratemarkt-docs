@@ -75,6 +75,7 @@ pages:
     - 'Check Rate': 'api_docs/check_rate.md'
     - 'Book Rate': 'api_docs/book_rate.md'
     - 'Check Booking': 'api_docs/check_booking.md'
+    - 'Check Bookings': 'api_docs/check_bookings.md'
     - 'Cancel Booking': 'api_docs/cancel_booking.md'
     - 'Errors': 'api_docs/errors.md'
     - 'Client Libraries': 'api_docs/client_libraries.md'

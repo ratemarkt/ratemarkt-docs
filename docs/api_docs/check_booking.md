@@ -78,6 +78,12 @@ POST https://api.ratemarkt.com/v1/checkbooking
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td><code>Result.booking</code></td>
+            <td><code>object[Booking]</code></td>
+            <td>no</td>
+            <td>Booking object</td>
+        </tr>
         {! api_docs/_includes/booking_args.md !}
     </tbody>
 </table>
