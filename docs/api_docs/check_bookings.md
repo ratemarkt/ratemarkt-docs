@@ -49,6 +49,10 @@ POST https://api.ratemarkt.com/v1/checkbookings
     </tbody>
 </table>
 
+!!! warning "Duration between dates"
+    Duration between <code>fromDate</code> to <code>toDate</code> is restricted to 30 days at maximum.
+
+
 ## Example Query Object
 
 ```json
